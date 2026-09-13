@@ -81,7 +81,7 @@ function mergeSyndicationItems(currentItems, previousItems, limit = SYNDICATION_
   const unpublishedCurrentItems = sortByRecency(
     [...currentByFile.values()].filter((item) => !publishedFiles.has(item.file))
   );
-  const availableNewSlots = Math.max(1, limit - updatedPublishedItems.length);
+  const availableNewSlots = Math.max(0, limit - updatedPublishedItems.length);
 
   return sortByRecency([
     ...unpublishedCurrentItems.slice(0, availableNewSlots),

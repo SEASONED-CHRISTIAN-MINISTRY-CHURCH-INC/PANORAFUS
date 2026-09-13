@@ -222,6 +222,20 @@ test('syndication merge reorders updated published files by recency', () => {
   assert.equal(merged[3].file, 'SUMMARY.md');
 });
 
+test('syndication merge respects a zero item limit', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'REIGN_OF_DEATH_ETERNAL_LIFE.md', summary: 'New devotional', committedAt: '2026-09-13T18:10:48Z' }
+    ],
+    [
+      { file: 'README.md', summary: 'Published readme', committedAt: '2026-09-13T18:10:47Z' }
+    ],
+    0
+  );
+
+  assert.deepEqual(merged, []);
+});
+
 test('syndication snapshot reads previous published items from disk', () => {
   const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'panorafus-snapshot-'));
   try {
