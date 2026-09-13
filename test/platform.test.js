@@ -159,7 +159,7 @@ test('syndication merge preserves prior items after current updates', () => {
     3
   );
 
-  assert.deepEqual(merged.map((item) => item.file), ['ABOUT_PANORAFUS.md', 'README.md', 'SUMMARY.md']);
+  assert.deepEqual(merged.map((item) => item.file), ['ABOUT_PANORAFUS.md', 'SUMMARY.md', 'README.md']);
 });
 
 test('syndication merge keeps the newest duplicate item per file', () => {
@@ -174,6 +174,31 @@ test('syndication merge keeps the newest duplicate item per file', () => {
   );
 
   assert.equal(merged[0].summary, 'Newer previous readme');
+});
+
+test('syndication merge prepends new files without evicting unchanged published items', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'REIGN_OF_DEATH_ETERNAL_LIFE.md', summary: 'New devotional', committedAt: '2026-09-13T18:10:48Z' },
+      { file: 'README.md', summary: 'Updated readme', committedAt: '2026-09-13T18:10:48Z' },
+      { file: 'SUMMARY.md', summary: 'Updated summary', committedAt: '2026-09-13T18:10:48Z' }
+    ],
+    [
+      { file: 'README.md', summary: 'Published readme', committedAt: '2026-09-11T19:51:04Z' },
+      { file: 'SATANS_VICTORY_SATANS_DEFEAT.md', summary: 'Published satan study', committedAt: '2026-09-11T19:51:04Z' },
+      { file: 'SECURITY.md', summary: 'Published security', committedAt: '2026-09-12T20:18:53Z' },
+      { file: 'SUMMARY.md', summary: 'Published summary', committedAt: '2026-09-11T19:51:04Z' }
+    ],
+    5
+  );
+
+  assert.deepEqual(merged.map((item) => item.file), [
+    'REIGN_OF_DEATH_ETERNAL_LIFE.md',
+    'README.md',
+    'SATANS_VICTORY_SATANS_DEFEAT.md',
+    'SECURITY.md',
+    'SUMMARY.md'
+  ]);
 });
 
 test('syndication snapshot reads previous published items from disk', () => {

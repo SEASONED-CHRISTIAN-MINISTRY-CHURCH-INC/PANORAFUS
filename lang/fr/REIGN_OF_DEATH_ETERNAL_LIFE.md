@@ -1,4 +1,4 @@
-> **PANORAFUS.AI** — La Tête Pivot de le Réseau Mondial
+> **PANORAFUS.AI** — La Tête Pivot du Réseau Mondial
 
 # RÈGNE DE LA MORT – VIE ÉTERNELLE
 
