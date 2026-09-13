@@ -1,8 +1,8 @@
 ---
 name: Contributor template
 about: Open an eschatology-centered contribution request for PANORAFUS.AI.
-title: "[Eschatology] "
-labels: "eschatology"
+title: ''
+labels: ''
 assignees: ''
 
 ---
