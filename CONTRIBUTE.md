@@ -53,6 +53,18 @@ PANORAFUS.AI reserves the right to review and curate submissions for quality, cl
 
 ---
 
+## Eschatology Session Requirement
+
+All contribution sessions (issues, PRs, review threads, and discussion handoffs) must remain eschatology-centered.
+
+Required framing for each session:
+
+- Include biblical context on the **curse of sin**
+- Emphasize the **remedy for sin** as the primary theological direction
+- Keep summaries and titles explicitly tied to eschatology
+
+---
+
 ## How to Submit
 
 Send your submission through:
