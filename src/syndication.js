@@ -38,27 +38,55 @@ function readPreviousSyndicationSnapshot(repoRoot) {
 }
 
 function mergeSyndicationItems(currentItems, previousItems, limit = SYNDICATION_ITEM_LIMIT) {
-  const mergedByFile = new Map();
+  const dedupeNewest = (items) => {
+    const mergedByFile = new Map();
 
-  for (const item of [...currentItems, ...previousItems]) {
-    if (!item || !item.file) {
-      continue;
+    for (const item of items) {
+      if (!item || !item.file) {
+        continue;
+      }
+      const existing = mergedByFile.get(item.file);
+      const itemTime = Date.parse(item.committedAt || '') || 0;
+      const existingTime = existing ? (Date.parse(existing.committedAt || '') || 0) : -1;
+      if (!existing || itemTime > existingTime) {
+        mergedByFile.set(item.file, item);
+      }
     }
-    const existing = mergedByFile.get(item.file);
-    const itemTime = Date.parse(item.committedAt || '') || 0;
-    const existingTime = existing ? (Date.parse(existing.committedAt || '') || 0) : -1;
-    if (!existing || itemTime > existingTime) {
-      mergedByFile.set(item.file, item);
-    }
+
+    return mergedByFile;
+  };
+  const sortByRecency = (items) => [...items].sort((left, right) => {
+    const leftTime = Date.parse(left.committedAt || '') || 0;
+    const rightTime = Date.parse(right.committedAt || '') || 0;
+    return rightTime - leftTime;
+  });
+  const priorItems = Array.isArray(previousItems) ? previousItems : [];
+  const currentByFile = dedupeNewest(currentItems);
+
+  if (priorItems.length === 0) {
+    return sortByRecency(currentByFile.values()).slice(0, limit);
   }
 
-  return [...mergedByFile.values()]
-    .sort((left, right) => {
-      const leftTime = Date.parse(left.committedAt || '') || 0;
-      const rightTime = Date.parse(right.committedAt || '') || 0;
-      return rightTime - leftTime;
+  const previousByFile = dedupeNewest(priorItems);
+  const publishedFiles = new Set(previousByFile.keys());
+  const updatedPublishedItems = sortByRecency(
+    [...publishedFiles].map((file) => {
+      const currentItem = currentByFile.get(file);
+      const previousItem = previousByFile.get(file);
+      const currentTime = Date.parse(currentItem?.committedAt || '') || 0;
+      const previousTime = Date.parse(previousItem?.committedAt || '') || 0;
+      return currentTime > previousTime ? currentItem : previousItem;
     })
-    .slice(0, limit);
+  );
+  const unpublishedCurrentItems = sortByRecency(
+    [...currentByFile.values()].filter((item) => !publishedFiles.has(item.file))
+  );
+  const availableNewSlots = Math.max(1, limit - updatedPublishedItems.length);
+
+  return sortByRecency([
+    ...unpublishedCurrentItems.slice(0, availableNewSlots),
+    ...updatedPublishedItems
+  ]).slice(0, limit);
 }
 
 function createSyndicationSnapshot(repoRoot) {
@@ -67,7 +95,6 @@ function createSyndicationSnapshot(repoRoot) {
   const updates = getRecentContentUpdates(root, SYNDICATION_ITEM_LIMIT);
   const previousSnapshot = readPreviousSyndicationSnapshot(root);
   const previousItems = previousSnapshot.items;
-  const previousGeneratedAt = Date.parse(previousSnapshot.generatedAt || '') || 0;
   const currentItems = updates.map((item) => ({
     title: item.title,
     summary: item.summary,
@@ -76,18 +103,11 @@ function createSyndicationSnapshot(repoRoot) {
     url: toGitHubUrl(item.file),
     sha: item.sha
   }));
-  const publishedFiles = new Set(previousItems.map((item) => item.file));
-  const relevantCurrentItems = previousItems.length === 0
-    ? currentItems
-    : currentItems.filter((item) => {
-        const committedAt = Date.parse(item.committedAt || '') || 0;
-        return publishedFiles.has(item.file) || committedAt > previousGeneratedAt;
-      });
 
   return {
     generatedAt: dashboard.generatedAt,
     dashboard,
-    items: mergeSyndicationItems(relevantCurrentItems, previousItems, SYNDICATION_ITEM_LIMIT)
+    items: mergeSyndicationItems(currentItems, previousItems, SYNDICATION_ITEM_LIMIT)
   };
 }
 

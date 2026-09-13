@@ -238,7 +238,13 @@ test('syndication snapshot reads previous published items from disk', () => {
       '',
       'Website: panorafus.ai'
     ].join('\n'));
+    fs.writeFileSync(path.join(fixtureRoot, 'FIRST_THINGS_LAST_THINGS.md'), [
+      '# FIRST THINGS - LAST THINGS',
+      '',
+      'PANORAFUS.AI presents the beginning and the end under the Lordship of Jesus Christ.'
+    ].join('\n'));
     fs.writeFileSync(path.join(fixtureRoot, 'public', 'api', 'syndication.json'), JSON.stringify({
+      generatedAt: '2026-09-06T08:00:00Z',
       items: [
         {
           title: 'Summary',
@@ -254,7 +260,7 @@ test('syndication snapshot reads previous published items from disk', () => {
     execFileSync('git', ['init', '-b', 'main'], { cwd: fixtureRoot });
     execFileSync('git', ['config', 'user.name', 'PANORAFUS Tests'], { cwd: fixtureRoot });
     execFileSync('git', ['config', 'user.email', 'tests@panorafus.local'], { cwd: fixtureRoot });
-    execFileSync('git', ['add', 'ABOUT_PANORAFUS.md'], { cwd: fixtureRoot });
+    execFileSync('git', ['add', 'ABOUT_PANORAFUS.md', 'FIRST_THINGS_LAST_THINGS.md'], { cwd: fixtureRoot });
     execFileSync('git', ['commit', '-m', 'Seed about'], {
       cwd: fixtureRoot,
       env: {
@@ -266,6 +272,8 @@ test('syndication snapshot reads previous published items from disk', () => {
 
     const snapshot = createSyndicationSnapshot(fixtureRoot);
     assert.ok(snapshot.items.some((item) => item.file === 'SUMMARY.md'));
+    assert.ok(snapshot.items.some((item) => item.file === 'ABOUT_PANORAFUS.md'));
+    assert.ok(snapshot.items.some((item) => item.file === 'FIRST_THINGS_LAST_THINGS.md'));
   } finally {
     fs.rmSync(fixtureRoot, { recursive: true, force: true });
   }
