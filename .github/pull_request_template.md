@@ -1,6 +1,6 @@
 ## Summary
 
-Describe the PANORAFUS.AI setup/documentation change and its purpose.
+Describe the PANORAFUS.AI change and its eschatology-centered purpose.
 
 ## Eschatology Session Declaration
 
