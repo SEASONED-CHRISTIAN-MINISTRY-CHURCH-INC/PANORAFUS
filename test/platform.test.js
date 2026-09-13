@@ -236,6 +236,26 @@ test('syndication merge respects a zero item limit', () => {
   assert.deepEqual(merged, []);
 });
 
+test('syndication merge lets a newer unpublished item displace the oldest full-feed entry', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'REIGN_OF_DEATH_ETERNAL_LIFE.md', summary: 'New devotional', committedAt: '2026-09-13T18:10:48Z' }
+    ],
+    [
+      { file: 'README.md', summary: 'Published readme', committedAt: '2026-09-13T18:10:47Z' },
+      { file: 'SUMMARY.md', summary: 'Published summary', committedAt: '2026-09-13T18:10:46Z' },
+      { file: 'SATANS_VICTORY_SATANS_DEFEAT.md', summary: 'Published satan study', committedAt: '2026-09-13T18:10:45Z' }
+    ],
+    3
+  );
+
+  assert.deepEqual(merged.map((item) => item.file), [
+    'REIGN_OF_DEATH_ETERNAL_LIFE.md',
+    'README.md',
+    'SUMMARY.md'
+  ]);
+});
+
 test('syndication snapshot reads previous published items from disk', () => {
   const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'panorafus-snapshot-'));
   try {
