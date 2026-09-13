@@ -176,6 +176,86 @@ test('syndication merge keeps the newest duplicate item per file', () => {
   assert.equal(merged[0].summary, 'Newer previous readme');
 });
 
+test('syndication merge prepends new files without evicting unchanged published items', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'REIGN_OF_DEATH_ETERNAL_LIFE.md', summary: 'New devotional', committedAt: '2026-09-13T18:10:48Z' },
+      { file: 'README.md', summary: 'Updated readme', committedAt: '2026-09-13T18:10:47Z' },
+      { file: 'SUMMARY.md', summary: 'Updated summary', committedAt: '2026-09-13T18:10:46Z' }
+    ],
+    [
+      { file: 'README.md', summary: 'Published readme', committedAt: '2026-09-11T19:51:04Z' },
+      { file: 'SATANS_VICTORY_SATANS_DEFEAT.md', summary: 'Published satan study', committedAt: '2026-09-13T18:10:44Z' },
+      { file: 'SECURITY.md', summary: 'Published security', committedAt: '2026-09-13T18:10:45Z' },
+      { file: 'SUMMARY.md', summary: 'Published summary', committedAt: '2026-09-11T19:51:04Z' }
+    ],
+    5
+  );
+
+  assert.deepEqual(merged.map((item) => item.file), [
+    'REIGN_OF_DEATH_ETERNAL_LIFE.md',
+    'README.md',
+    'SUMMARY.md',
+    'SECURITY.md',
+    'SATANS_VICTORY_SATANS_DEFEAT.md'
+  ]);
+});
+
+test('syndication merge reorders updated published files by recency', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'PANORAFUS_DASHBOARD.md', summary: 'Updated dashboard', committedAt: '2026-09-13T18:10:49Z' }
+    ],
+    [
+      { file: 'README.md', summary: 'Published readme', committedAt: '2026-09-13T18:10:48Z' },
+      { file: 'REIGN_OF_DEATH_ETERNAL_LIFE.md', summary: 'Published devotional', committedAt: '2026-09-13T18:10:47Z' },
+      { file: 'SUMMARY.md', summary: 'Published summary', committedAt: '2026-09-13T18:10:46Z' },
+      { file: 'PANORAFUS_DASHBOARD.md', summary: 'Published dashboard', committedAt: '2026-09-13T18:04:07Z' }
+    ],
+    4
+  );
+
+  assert.equal(merged[0].file, 'PANORAFUS_DASHBOARD.md');
+  assert.equal(merged[0].summary, 'Updated dashboard');
+  assert.equal(merged[1].file, 'README.md');
+  assert.equal(merged[2].file, 'REIGN_OF_DEATH_ETERNAL_LIFE.md');
+  assert.equal(merged[3].file, 'SUMMARY.md');
+});
+
+test('syndication merge respects a zero item limit', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'REIGN_OF_DEATH_ETERNAL_LIFE.md', summary: 'New devotional', committedAt: '2026-09-13T18:10:48Z' }
+    ],
+    [
+      { file: 'README.md', summary: 'Published readme', committedAt: '2026-09-13T18:10:47Z' }
+    ],
+    0
+  );
+
+  assert.deepEqual(merged, []);
+});
+
+test('syndication merge lets a newer unpublished item displace the oldest full-feed entry', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'REIGN_OF_DEATH_ETERNAL_LIFE.md', summary: 'New devotional', committedAt: '2026-09-13T18:10:48Z' }
+    ],
+    [
+      { file: 'README.md', summary: 'Published readme', committedAt: '2026-09-13T18:10:47Z' },
+      { file: 'SUMMARY.md', summary: 'Published summary', committedAt: '2026-09-13T18:10:46Z' },
+      { file: 'SATANS_VICTORY_SATANS_DEFEAT.md', summary: 'Published satan study', committedAt: '2026-09-13T18:10:45Z' }
+    ],
+    3
+  );
+
+  assert.deepEqual(merged.map((item) => item.file), [
+    'REIGN_OF_DEATH_ETERNAL_LIFE.md',
+    'README.md',
+    'SUMMARY.md'
+  ]);
+});
+
 test('syndication snapshot reads previous published items from disk', () => {
   const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'panorafus-snapshot-'));
   try {
@@ -192,7 +272,13 @@ test('syndication snapshot reads previous published items from disk', () => {
       '',
       'Website: panorafus.ai'
     ].join('\n'));
+    fs.writeFileSync(path.join(fixtureRoot, 'FIRST_THINGS_LAST_THINGS.md'), [
+      '# FIRST THINGS - LAST THINGS',
+      '',
+      'PANORAFUS.AI presents the beginning and the end under the Lordship of Jesus Christ.'
+    ].join('\n'));
     fs.writeFileSync(path.join(fixtureRoot, 'public', 'api', 'syndication.json'), JSON.stringify({
+      generatedAt: '2026-09-06T08:00:00Z',
       items: [
         {
           title: 'Summary',
@@ -208,7 +294,7 @@ test('syndication snapshot reads previous published items from disk', () => {
     execFileSync('git', ['init', '-b', 'main'], { cwd: fixtureRoot });
     execFileSync('git', ['config', 'user.name', 'PANORAFUS Tests'], { cwd: fixtureRoot });
     execFileSync('git', ['config', 'user.email', 'tests@panorafus.local'], { cwd: fixtureRoot });
-    execFileSync('git', ['add', 'ABOUT_PANORAFUS.md'], { cwd: fixtureRoot });
+    execFileSync('git', ['add', 'ABOUT_PANORAFUS.md', 'FIRST_THINGS_LAST_THINGS.md'], { cwd: fixtureRoot });
     execFileSync('git', ['commit', '-m', 'Seed about'], {
       cwd: fixtureRoot,
       env: {
@@ -220,6 +306,8 @@ test('syndication snapshot reads previous published items from disk', () => {
 
     const snapshot = createSyndicationSnapshot(fixtureRoot);
     assert.ok(snapshot.items.some((item) => item.file === 'SUMMARY.md'));
+    assert.ok(snapshot.items.some((item) => item.file === 'ABOUT_PANORAFUS.md'));
+    assert.ok(snapshot.items.some((item) => item.file === 'FIRST_THINGS_LAST_THINGS.md'));
   } finally {
     fs.rmSync(fixtureRoot, { recursive: true, force: true });
   }
