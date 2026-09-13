@@ -2,6 +2,12 @@
 
 Describe the PANORAFUS.AI setup/documentation change and its purpose.
 
+## Eschatology Session Declaration
+
+- [ ] This PR session is explicitly eschatology-centered.
+- [ ] The change includes curse-of-sin context where relevant.
+- [ ] The change emphasizes remedy-for-sin framing as primary.
+
 ## Scope
 
 - [ ] Documentation architecture (`README.md`, `SUMMARY.md`, language books, indexes)
