@@ -20,56 +20,29 @@ function toGitHubUrl(file) {
   return `https://github.com/jpaul11-code/PANORAFUS/blob/main/${file}`;
 }
 
-function readPreviousSyndicationItems(repoRoot) {
+function readPreviousSyndicationSnapshot(repoRoot) {
   const previousSnapshotPath = path.join(repoRoot, 'public', 'api', 'syndication.json');
   if (!fs.existsSync(previousSnapshotPath)) {
-    return [];
+    return { generatedAt: null, items: [] };
   }
 
   try {
     const snapshot = JSON.parse(fs.readFileSync(previousSnapshotPath, 'utf8'));
-    return Array.isArray(snapshot.items) ? snapshot.items : [];
+    return {
+      generatedAt: snapshot.generatedAt || null,
+      items: Array.isArray(snapshot.items) ? snapshot.items : []
+    };
   } catch (error) {
-    return [];
+    return { generatedAt: null, items: [] };
   }
 }
 
 function mergeSyndicationItems(currentItems, previousItems, limit = SYNDICATION_ITEM_LIMIT) {
-  if (!Array.isArray(previousItems) || previousItems.length === 0) {
-    const mergedByFile = new Map();
-
-    for (const item of currentItems) {
-      if (!item || !item.file) {
-        continue;
-      }
-      const existing = mergedByFile.get(item.file);
-      const itemTime = Date.parse(item.committedAt || '') || 0;
-      const existingTime = existing ? (Date.parse(existing.committedAt || '') || 0) : -1;
-      if (!existing || itemTime > existingTime) {
-        mergedByFile.set(item.file, item);
-      }
-    }
-
-    return [...mergedByFile.values()]
-      .sort((left, right) => {
-        const leftTime = Date.parse(left.committedAt || '') || 0;
-        const rightTime = Date.parse(right.committedAt || '') || 0;
-        return rightTime - leftTime;
-      })
-      .slice(0, limit);
-  }
-
   const mergedByFile = new Map();
-  const priorOrder = [];
-  const seenPriorOrder = new Set();
 
-  for (const item of previousItems) {
+  for (const item of [...currentItems, ...previousItems]) {
     if (!item || !item.file) {
       continue;
-    }
-    if (!seenPriorOrder.has(item.file)) {
-      priorOrder.push(item.file);
-      seenPriorOrder.add(item.file);
     }
     const existing = mergedByFile.get(item.file);
     const itemTime = Date.parse(item.committedAt || '') || 0;
@@ -79,45 +52,22 @@ function mergeSyndicationItems(currentItems, previousItems, limit = SYNDICATION_
     }
   }
 
-  const newFiles = [];
-  const sortedCurrentItems = [...currentItems].sort((left, right) => {
-    const leftTime = Date.parse(left?.committedAt || '') || 0;
-    const rightTime = Date.parse(right?.committedAt || '') || 0;
-    return rightTime - leftTime;
-  });
-
-  for (const item of sortedCurrentItems) {
-    if (!item || !item.file) {
-      continue;
-    }
-    const existing = mergedByFile.get(item.file);
-    const itemTime = Date.parse(item.committedAt || '') || 0;
-    const existingTime = existing ? (Date.parse(existing.committedAt || '') || 0) : -1;
-    if (!existing) {
-      mergedByFile.set(item.file, item);
-      newFiles.push(item.file);
-      continue;
-    }
-    if (itemTime > existingTime) {
-      mergedByFile.set(item.file, item);
-    }
-  }
-
-  const mergedItems = [
-    ...newFiles.map((file) => mergedByFile.get(file)),
-    ...priorOrder
-      .filter((file) => !newFiles.includes(file))
-      .map((file) => mergedByFile.get(file))
-  ];
-
-  return mergedItems.slice(0, limit);
+  return [...mergedByFile.values()]
+    .sort((left, right) => {
+      const leftTime = Date.parse(left.committedAt || '') || 0;
+      const rightTime = Date.parse(right.committedAt || '') || 0;
+      return rightTime - leftTime;
+    })
+    .slice(0, limit);
 }
 
 function createSyndicationSnapshot(repoRoot) {
   const dashboard = createDashboardSnapshot(repoRoot);
   const root = path.resolve(repoRoot || path.resolve(__dirname, '..'));
   const updates = getRecentContentUpdates(root, SYNDICATION_ITEM_LIMIT);
-  const previousItems = readPreviousSyndicationItems(root);
+  const previousSnapshot = readPreviousSyndicationSnapshot(root);
+  const previousItems = previousSnapshot.items;
+  const previousGeneratedAt = Date.parse(previousSnapshot.generatedAt || '') || 0;
   const currentItems = updates.map((item) => ({
     title: item.title,
     summary: item.summary,
@@ -126,11 +76,18 @@ function createSyndicationSnapshot(repoRoot) {
     url: toGitHubUrl(item.file),
     sha: item.sha
   }));
+  const publishedFiles = new Set(previousItems.map((item) => item.file));
+  const relevantCurrentItems = previousItems.length === 0
+    ? currentItems
+    : currentItems.filter((item) => {
+        const committedAt = Date.parse(item.committedAt || '') || 0;
+        return publishedFiles.has(item.file) || committedAt > previousGeneratedAt;
+      });
 
   return {
     generatedAt: dashboard.generatedAt,
     dashboard,
-    items: mergeSyndicationItems(currentItems, previousItems, SYNDICATION_ITEM_LIMIT)
+    items: mergeSyndicationItems(relevantCurrentItems, previousItems, SYNDICATION_ITEM_LIMIT)
   };
 }
 
