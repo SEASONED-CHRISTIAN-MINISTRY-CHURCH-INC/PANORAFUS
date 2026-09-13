@@ -4,7 +4,15 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Sun, 13 Sep 2026 18:04:06 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 18:05:23 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:31b1103a0a6249b111fc129e1c299d895f11a378</guid>
+      <pubDate>Sun, 13 Sep 2026 18:04:07 GMT</pubDate>
+      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
+    </item>
 
     <item>
       <title>Contribute to PANORAFUS.AI</title>
@@ -12,14 +20,6 @@
       <guid>CONTRIBUTE.md:c51f634827eceb917e143b95ef8e319b6d70efd2</guid>
       <pubDate>Sun, 13 Sep 2026 18:00:21 GMT</pubDate>
       <description>Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:cef2c897133e201707faedf359bf43c124b54913</guid>
-      <pubDate>Sat, 12 Sep 2026 20:19:05 GMT</pubDate>
-      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
     <item>

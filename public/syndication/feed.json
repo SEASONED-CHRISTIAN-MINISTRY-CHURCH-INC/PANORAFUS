@@ -6,18 +6,18 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:31b1103a0a6249b111fc129e1c299d895f11a378",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
+      "date_published": "2026-09-13T18:04:07Z"
+    },
+    {
       "id": "CONTRIBUTE.md:c51f634827eceb917e143b95ef8e319b6d70efd2",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
       "title": "Contribute to PANORAFUS.AI",
       "summary": "Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.",
       "date_published": "2026-09-13T18:00:21Z"
-    },
-    {
-      "id": "PANORAFUS_DASHBOARD.md:cef2c897133e201707faedf359bf43c124b54913",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-12T20:19:05Z"
     },
     {
       "id": "SECURITY.md:e5a59c27b1ecef1ff28be708a7e10120111df88f",
