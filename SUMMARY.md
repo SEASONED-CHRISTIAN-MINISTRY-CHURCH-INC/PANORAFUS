@@ -23,6 +23,7 @@
 - [Holy Spirit and Gifts](HOLY_SPIRIT_AND_GIFTS.md)
 - [Visions and Revelations](VISIONS_AND_REVELATIONS.md)
 - [The Lord's Supper](THE_LORD_SUPPER.md)
+- [Blood Sacrifices — Christ the Lamb](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
 - [Worship and Prayer](WORSHIP_AND_PRAYER.md)
 - [Devotional Prayer](DEVOTIONAL_PRAYER.md)
 - [Prayer and Intercession Networks](PRAYER_AND_INTERCESSION_NETWORKS.md)

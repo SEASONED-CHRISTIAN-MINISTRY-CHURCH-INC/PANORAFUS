@@ -4,22 +4,38 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Mon, 14 Sep 2026 16:11:17 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 17:08:13 GMT</lastBuildDate>
 
     <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:e064ceb5e8f6c111a45a6c4ee50d1418749487f0</guid>
-      <pubDate>Sun, 13 Sep 2026 18:26:27 GMT</pubDate>
-      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
+      <title>BLOOD SACRIFICES — CHRIST THE LAMB</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md</link>
+      <guid>BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:e621253fe6650825f1d63955b67fb1ae7f530eff</guid>
+      <pubDate>Tue, 15 Sep 2026 17:04:06 GMT</pubDate>
+      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
     </item>
 
     <item>
       <title>PANORAFUS.AI</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:5868f209099db774daade50c3fd3aa5482ce1ed2</guid>
-      <pubDate>Sun, 13 Sep 2026 18:10:48 GMT</pubDate>
+      <guid>README.md:e621253fe6650825f1d63955b67fb1ae7f530eff</guid>
+      <pubDate>Tue, 15 Sep 2026 17:04:06 GMT</pubDate>
       <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License</description>
+    </item>
+
+    <item>
+      <title>Summary</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md</link>
+      <guid>SUMMARY.md:e621253fe6650825f1d63955b67fb1ae7f530eff</guid>
+      <pubDate>Tue, 15 Sep 2026 17:04:06 GMT</pubDate>
+      <description>Summary</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:df82a51be60a4b708c531d684a4d416a1eb4077e</guid>
+      <pubDate>Mon, 14 Sep 2026 16:11:18 GMT</pubDate>
+      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
     <item>
@@ -28,14 +44,6 @@
       <guid>REIGN_OF_DEATH_ETERNAL_LIFE.md:5868f209099db774daade50c3fd3aa5482ce1ed2</guid>
       <pubDate>Sun, 13 Sep 2026 18:10:48 GMT</pubDate>
       <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
-    </item>
-
-    <item>
-      <title>Summary</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md</link>
-      <guid>SUMMARY.md:5868f209099db774daade50c3fd3aa5482ce1ed2</guid>
-      <pubDate>Sun, 13 Sep 2026 18:10:48 GMT</pubDate>
-      <description>Summary</description>
     </item>
 
     <item>
@@ -92,14 +100,6 @@
       <guid>CHRISTIAN_INSTITUTIONS.md:bb381e08f61ef30f9d32400be58be84f821e6721</guid>
       <pubDate>Sun, 13 Sep 2026 18:05:08 GMT</pubDate>
       <description>A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.</description>
-    </item>
-
-    <item>
-      <title>Contribute to PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md</link>
-      <guid>CONTRIBUTE.md:bb381e08f61ef30f9d32400be58be84f821e6721</guid>
-      <pubDate>Sun, 13 Sep 2026 18:05:08 GMT</pubDate>
-      <description>Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.</description>
     </item>
   </channel>
 </rss>

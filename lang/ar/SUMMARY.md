@@ -20,6 +20,7 @@
 - [الروح القدس والمواهب الروحية](HOLY_SPIRIT_AND_GIFTS.md)
 - [الرؤى والمكاشفات](VISIONS_AND_REVELATIONS.md)
 - [عشاء الرب](THE_LORD_SUPPER.md)
+- [ذبائح الدم — المسيح الحمل](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
 - [العبادة والصلاة](WORSHIP_AND_PRAYER.md)
 - [الصلاة التأملية](DEVOTIONAL_PRAYER.md)
 - [شبكات الصلاة والشفاعة](PRAYER_AND_INTERCESSION_NETWORKS.md)
