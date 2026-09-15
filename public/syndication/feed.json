@@ -6,31 +6,38 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:e064ceb5e8f6c111a45a6c4ee50d1418749487f0",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-13T18:26:27Z"
+      "id": "BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:e621253fe6650825f1d63955b67fb1ae7f530eff",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md",
+      "title": "BLOOD SACRIFICES — CHRIST THE LAMB",
+      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
+      "date_published": "2026-09-15T17:04:06Z"
     },
     {
-      "id": "README.md:5868f209099db774daade50c3fd3aa5482ce1ed2",
+      "id": "README.md:e621253fe6650825f1d63955b67fb1ae7f530eff",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
       "title": "PANORAFUS.AI",
       "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License",
-      "date_published": "2026-09-13T18:10:48Z"
+      "date_published": "2026-09-15T17:04:06Z"
+    },
+    {
+      "id": "SUMMARY.md:e621253fe6650825f1d63955b67fb1ae7f530eff",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "title": "Summary",
+      "summary": "Summary",
+      "date_published": "2026-09-15T17:04:06Z"
+    },
+    {
+      "id": "PANORAFUS_DASHBOARD.md:df82a51be60a4b708c531d684a4d416a1eb4077e",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
+      "date_published": "2026-09-14T16:11:18Z"
     },
     {
       "id": "REIGN_OF_DEATH_ETERNAL_LIFE.md:5868f209099db774daade50c3fd3aa5482ce1ed2",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/REIGN_OF_DEATH_ETERNAL_LIFE.md",
       "title": "REIGN OF DEATH – ETERNAL LIFE",
       "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-13T18:10:48Z"
-    },
-    {
-      "id": "SUMMARY.md:5868f209099db774daade50c3fd3aa5482ce1ed2",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
-      "title": "Summary",
-      "summary": "Summary",
       "date_published": "2026-09-13T18:10:48Z"
     },
     {
@@ -80,13 +87,6 @@
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
       "title": "Christian Religious Institutions",
       "summary": "A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.",
-      "date_published": "2026-09-13T18:05:08Z"
-    },
-    {
-      "id": "CONTRIBUTE.md:bb381e08f61ef30f9d32400be58be84f821e6721",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
-      "title": "Contribute to PANORAFUS.AI",
-      "summary": "Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.",
       "date_published": "2026-09-13T18:05:08Z"
     }
   ]
