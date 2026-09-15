@@ -4,7 +4,15 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Tue, 15 Sep 2026 17:08:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 17:08:52 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:412f9aee3bde2084e5b9391e8c2c98a6501837a6</guid>
+      <pubDate>Tue, 15 Sep 2026 17:08:14 GMT</pubDate>
+      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
+    </item>
 
     <item>
       <title>BLOOD SACRIFICES — CHRIST THE LAMB</title>
@@ -28,14 +36,6 @@
       <guid>SUMMARY.md:e621253fe6650825f1d63955b67fb1ae7f530eff</guid>
       <pubDate>Tue, 15 Sep 2026 17:04:06 GMT</pubDate>
       <description>Summary</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:df82a51be60a4b708c531d684a4d416a1eb4077e</guid>
-      <pubDate>Mon, 14 Sep 2026 16:11:18 GMT</pubDate>
-      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
     <item>
