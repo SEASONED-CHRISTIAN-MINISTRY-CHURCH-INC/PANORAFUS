@@ -6,6 +6,13 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:a72e4470e805c72c99889da561f14a0ee7f4a6a2",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
+      "date_published": "2026-09-16T20:48:50Z"
+    },
+    {
       "id": "LAW_GOSPEL.md:b56814b23a853a0d0796010ab0038ae6a926f26a",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/LAW_GOSPEL.md",
       "title": "LAW — GOSPEL",
@@ -25,13 +32,6 @@
       "title": "Summary",
       "summary": "Summary",
       "date_published": "2026-09-16T20:48:19Z"
-    },
-    {
-      "id": "PANORAFUS_DASHBOARD.md:f33ab82571d45383cbd50b9eed833ce1e15339b7",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-15T17:08:54Z"
     },
     {
       "id": "BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:5ba570888fc17298a97cf1567d1a952bae2536bd",

@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-09-16T20:48:25.188Z
+Generated at: 2026-09-16T20:54:07.897Z
 
 ## Dashboard Summary
 
@@ -10,10 +10,10 @@ Generated at: 2026-09-16T20:48:25.188Z
 
 ## Recent Content Updates
 
+- **PANORAFUS.AI — Global Dashboard Page** — PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **LAW — GOSPEL** — PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/LAW_GOSPEL.md))
 - **PANORAFUS.AI** — PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **Summary** — Summary ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md))
-- **PANORAFUS.AI — Global Dashboard Page** — PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
 - **BLOOD SACRIFICES — CHRIST THE LAMB** — PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md))
 - **About PANORAFUS.AI** — PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md))
 - **Apostle Paul — Genealogy & Life: From Infancy to Death** — PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md))
