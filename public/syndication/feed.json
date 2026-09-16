@@ -6,31 +6,38 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:412f9aee3bde2084e5b9391e8c2c98a6501837a6",
+      "id": "FIGURES_AND_SHADOWS_SUBSTANCE.md:1a92594bd998037126bfefed7895b351012a9a57",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/FIGURES_AND_SHADOWS_SUBSTANCE.md",
+      "title": "🕯️ FIGURES AND SHADOWS — SUBSTANCE",
+      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
+      "date_published": "2026-09-16T20:51:37Z"
+    },
+    {
+      "id": "README.md:1a92594bd998037126bfefed7895b351012a9a57",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License",
+      "date_published": "2026-09-16T20:51:37Z"
+    },
+    {
+      "id": "SUMMARY.md:1a92594bd998037126bfefed7895b351012a9a57",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "title": "Summary",
+      "summary": "Summary",
+      "date_published": "2026-09-16T20:51:37Z"
+    },
+    {
+      "id": "PANORAFUS_DASHBOARD.md:f33ab82571d45383cbd50b9eed833ce1e15339b7",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-15T17:08:14Z"
+      "date_published": "2026-09-15T17:08:54Z"
     },
     {
       "id": "BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:e621253fe6650825f1d63955b67fb1ae7f530eff",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md",
       "title": "BLOOD SACRIFICES — CHRIST THE LAMB",
       "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-15T17:04:06Z"
-    },
-    {
-      "id": "README.md:e621253fe6650825f1d63955b67fb1ae7f530eff",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
-      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License",
-      "date_published": "2026-09-15T17:04:06Z"
-    },
-    {
-      "id": "SUMMARY.md:e621253fe6650825f1d63955b67fb1ae7f530eff",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
-      "title": "Summary",
-      "summary": "Summary",
       "date_published": "2026-09-15T17:04:06Z"
     },
     {
@@ -80,13 +87,6 @@
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md",
       "title": "Buddhist Religious Institutions",
       "summary": "A structured overview of major Buddhist religious institutions worldwide, organized by tradition and function.",
-      "date_published": "2026-09-13T18:05:08Z"
-    },
-    {
-      "id": "CHRISTIAN_INSTITUTIONS.md:bb381e08f61ef30f9d32400be58be84f821e6721",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
-      "title": "Christian Religious Institutions",
-      "summary": "A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.",
       "date_published": "2026-09-13T18:05:08Z"
     }
   ]
