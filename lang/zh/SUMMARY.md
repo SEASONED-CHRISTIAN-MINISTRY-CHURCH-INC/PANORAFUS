@@ -21,6 +21,7 @@
 - [异象与启示](VISIONS_AND_REVELATIONS.md)
 - [主的晚餐](THE_LORD_SUPPER.md)
 - [血祭——基督羔羊](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
+- [律法——福音](LAW_GOSPEL.md)
 - [敬拜与祷告](WORSHIP_AND_PRAYER.md)
 - [灵修祷告](DEVOTIONAL_PRAYER.md)
 - [祷告与代祷网络](PRAYER_AND_INTERCESSION_NETWORKS.md)
