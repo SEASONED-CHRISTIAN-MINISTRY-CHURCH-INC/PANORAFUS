@@ -21,6 +21,7 @@
 - [Visões e Revelações](VISIONS_AND_REVELATIONS.md)
 - [A Ceia do Senhor](THE_LORD_SUPPER.md)
 - [Sacrifícios de Sangue — Cristo, o Cordeiro](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
+- [A Lei — O Evangelho](LAW_GOSPEL.md)
 - [Adoração e Oração](WORSHIP_AND_PRAYER.md)
 - [Oração Devocional](DEVOTIONAL_PRAYER.md)
 - [Redes de Oração e Intercessão](PRAYER_AND_INTERCESSION_NETWORKS.md)

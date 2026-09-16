@@ -21,6 +21,7 @@
 - [Visions et Révélations](VISIONS_AND_REVELATIONS.md)
 - [La Sainte Cène](THE_LORD_SUPPER.md)
 - [Sacrifices de Sang — Christ l'Agneau](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
+- [La Loi — L’Évangile](LAW_GOSPEL.md)
 - [Adoration et Prière](WORSHIP_AND_PRAYER.md)
 - [Prière Dévotionnelle](DEVOTIONAL_PRAYER.md)
 - [Réseaux de Prière et d'Intercession](PRAYER_AND_INTERCESSION_NETWORKS.md)
