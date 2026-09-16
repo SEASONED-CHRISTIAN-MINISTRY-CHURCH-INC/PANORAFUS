@@ -152,6 +152,7 @@ For website management, content updates, and administrative matters related to *
 - [👁️ Visions and Revelations — A Biblical Study of Divine Visions, Dreams, and Supernatural Revelations](VISIONS_AND_REVELATIONS.md)
 - [🍞 The Lord's Supper — A Biblical, Historical, and Theological Study of Holy Communion](THE_LORD_SUPPER.md)
 - [🩸 Blood Sacrifices — Christ the Lamb — An Eschatology-Centered Biblical Study of Sin, Atonement, and the Triumph of the Lamb of God](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
+- [🕯️ Figures and Shadows — Substance — An Eschatology-Centered Biblical Study of Types, Shadows, and Fulfillment in Jesus Christ](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [🕊️ The Holy Spirit and Spiritual Gifts — A Biblical and Theological Study](HOLY_SPIRIT_AND_GIFTS.md)
 - [🙏 Worship and Prayer — A Biblical and Theological Study](WORSHIP_AND_PRAYER.md)
 
