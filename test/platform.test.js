@@ -377,6 +377,7 @@ test('dashboard file generation recomputes KPI metrics after writing', { concurr
   const originalGetRepositoryMetrics = repositoryData.getRepositoryMetrics;
   let getRepositoryMetricsCallCount = 0;
   const dashboardModulePath = require.resolve('../src/dashboard');
+  const originalDashboardModule = require.cache[dashboardModulePath];
 
   try {
     repositoryData.getRepositoryMetrics = (...args) => {
@@ -406,7 +407,10 @@ test('dashboard file generation recomputes KPI metrics after writing', { concurr
   } finally {
     repositoryData.getRepositoryMetrics = originalGetRepositoryMetrics;
     fs.writeFileSync(dashboardPath, original);
-    delete require.cache[dashboardModulePath];
-    require('../src/dashboard');
+    if (originalDashboardModule) {
+      require.cache[dashboardModulePath] = originalDashboardModule;
+    } else {
+      delete require.cache[dashboardModulePath];
+    }
   }
 });
