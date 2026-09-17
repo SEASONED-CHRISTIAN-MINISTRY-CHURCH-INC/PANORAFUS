@@ -113,6 +113,10 @@ const BRANDING_SECTION_PATTERNS = [
   /panorafus\.ai/i,
   /pivotal head of the global network/i
 ];
+const IGNORED_SUMMARY_SECTION_MATCHERS = [
+  (text) => BRANDING_SECTION_PATTERNS.every((pattern) => pattern.test(text)),
+  (text) => /^(published under\b|author:)/i.test(text)
+];
 
 function getRepoRoot(repoRoot) {
   return path.resolve(repoRoot || path.resolve(__dirname, '..'));
@@ -168,11 +172,8 @@ function extractDocumentSummary(content, title, fallback = '') {
   let fallbackCandidate = '';
 
   for (const section of sections) {
-    const isBrandingSection = BRANDING_SECTION_PATTERNS.every((pattern) => pattern.test(section.normalized));
-    if (isBrandingSection) {
-      continue;
-    }
-    if (/^(published under\b|author:)/i.test(section.normalized)) {
+    const shouldIgnoreSection = IGNORED_SUMMARY_SECTION_MATCHERS.some((matches) => matches(section.normalized));
+    if (shouldIgnoreSection) {
       continue;
     }
 
