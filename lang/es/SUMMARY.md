@@ -21,6 +21,7 @@
 - [Visiones y Revelaciones](VISIONS_AND_REVELATIONS.md)
 - [La Cena del Señor](THE_LORD_SUPPER.md)
 - [Sacrificios de Sangre — Cristo el Cordero](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
+- [La Ley — El Evangelio](LAW_GOSPEL.md)
 - [Adoración y Oración](WORSHIP_AND_PRAYER.md)
 - [Oración Devocional](DEVOTIONAL_PRAYER.md)
 - [Redes de Oración e Intercesión](PRAYER_AND_INTERCESSION_NETWORKS.md)
