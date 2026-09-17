@@ -236,7 +236,7 @@ test('syndication merge respects a zero item limit', () => {
   assert.deepEqual(merged, []);
 });
 
-test('syndication merge lets a newer unpublished item displace the oldest full-feed entry', () => {
+test('syndication merge keeps a full published feed intact when no slot is available', () => {
   const merged = mergeSyndicationItems(
     [
       { file: 'REIGN_OF_DEATH_ETERNAL_LIFE.md', summary: 'New devotional', committedAt: '2026-09-13T18:10:48Z' }
@@ -250,9 +250,9 @@ test('syndication merge lets a newer unpublished item displace the oldest full-f
   );
 
   assert.deepEqual(merged.map((item) => item.file), [
-    'REIGN_OF_DEATH_ETERNAL_LIFE.md',
     'README.md',
-    'SUMMARY.md'
+    'SUMMARY.md',
+    'SATANS_VICTORY_SATANS_DEFEAT.md'
   ]);
 });
 
