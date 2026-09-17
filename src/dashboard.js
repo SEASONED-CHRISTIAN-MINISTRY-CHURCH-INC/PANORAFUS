@@ -74,7 +74,11 @@ function countLines(text) {
 }
 
 function countExternalLinks(content) {
-  return (String(content || '').match(/https?:\/\/[^)\s>"`]+/g) || []).length;
+  const matches = String(content || '').match(/https?:\/\/[^)\s>"`]+/g) || [];
+  return matches
+    .map((url) => url.replace(/[.,;:!?]+$/, ''))
+    .filter(Boolean)
+    .length;
 }
 
 function recomputeDocsDependentKpis(repoRoot) {
