@@ -12,7 +12,7 @@ const {
   mergeMonthlyActivity,
   searchInstitutions
 } = require('../src/repository-data');
-const { createDashboardSnapshot, generateDashboardMarkdown } = require('../src/dashboard');
+const { createDashboardSnapshot, generateDashboardFile, generateDashboardMarkdown } = require('../src/dashboard');
 const { createSyndicationSnapshot, mergeSyndicationItems } = require('../src/syndication');
 const { createServer } = require('../src/server');
 
@@ -174,6 +174,21 @@ test('syndication merge keeps the newest duplicate item per file', () => {
   );
 
   assert.equal(merged[0].summary, 'Newer previous readme');
+});
+
+test('syndication merge prefers current item details when timestamps are equal', () => {
+  const merged = mergeSyndicationItems(
+    [
+      { file: 'README.md', summary: 'Current readme summary', committedAt: '2026-09-16T20:51:37Z', sha: 'current-sha' }
+    ],
+    [
+      { file: 'README.md', summary: 'Previous readme summary', committedAt: '2026-09-16T20:51:37Z', sha: 'previous-sha' }
+    ],
+    1
+  );
+
+  assert.equal(merged[0].summary, 'Current readme summary');
+  assert.equal(merged[0].sha, 'current-sha');
 });
 
 test('syndication merge prepends new files without evicting unchanged published items', () => {
@@ -347,4 +362,30 @@ test('document summary fallback uses the title for short branding-only content',
   ].join('\n'), 'PANORAFUS.AI', 'README.md');
 
   assert.equal(summary, 'PANORAFUS.AI');
+});
+
+test('document summary skips PANORAFUS masthead branding sections', () => {
+  const summary = extractDocumentSummary(fs.readFileSync(path.join(repoRoot, 'FIGURES_AND_SHADOWS_SUBSTANCE.md'), 'utf8'), '🕯️ FIGURES AND SHADOWS — SUBSTANCE', 'FIGURES_AND_SHADOWS_SUBSTANCE.md');
+  assert.doesNotMatch(summary, /Pivotal Head of the Global Network/i);
+  assert.match(summary, /An Eschatology-Centered Biblical Study of Types, Shadows, and Fulfillment in Jesus Christ/i);
+});
+
+test('dashboard file generation recomputes KPI metrics after writing', { concurrency: false }, () => {
+  const dashboardPath = path.join(repoRoot, 'PANORAFUS_DASHBOARD.md');
+  const original = fs.readFileSync(dashboardPath, 'utf8');
+
+  try {
+    fs.writeFileSync(dashboardPath, `${original}\n<!-- temporary test marker -->\n`);
+    const generatedSnapshot = generateDashboardFile(repoRoot);
+    const generatedMarkdown = fs.readFileSync(dashboardPath, 'utf8');
+    const lineMatch = generatedMarkdown.match(/\| Documentation lines tracked \| (\d+) \|/);
+    assert.ok(lineMatch);
+
+    const dashboardLineCount = Number(lineMatch[1]);
+    const recomputedSnapshot = createDashboardSnapshot(repoRoot);
+    assert.equal(dashboardLineCount, recomputedSnapshot.kpis.documentationLines);
+    assert.equal(generatedSnapshot.kpis.documentationLines, recomputedSnapshot.kpis.documentationLines);
+  } finally {
+    fs.writeFileSync(dashboardPath, original);
+  }
 });

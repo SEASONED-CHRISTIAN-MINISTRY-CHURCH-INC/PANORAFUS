@@ -21,6 +21,7 @@
 - [दर्शन और प्रकाशन](VISIONS_AND_REVELATIONS.md)
 - [प्रभु भोज](THE_LORD_SUPPER.md)
 - [रक्त बलिदान — मसीह मेम्ना](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
+- [आकृतियाँ और छायाएँ — सार](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [व्यवस्था — सुसमाचार](LAW_GOSPEL.md)
 - [आराधना और प्रार्थना](WORSHIP_AND_PRAYER.md)
 - [भक्ति प्रार्थना](DEVOTIONAL_PRAYER.md)

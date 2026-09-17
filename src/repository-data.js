@@ -109,6 +109,14 @@ const REGION_DEFINITIONS = [
 
 const MIN_SUMMARY_LENGTH = 40;
 const MAX_TITLE_ADJACENT_SECTION_LENGTH = 80;
+const BRANDING_SECTION_PATTERNS = [
+  /panorafus\.ai/i,
+  /pivotal head of the global network/i
+];
+const IGNORED_SUMMARY_SECTION_MATCHERS = [
+  (text) => BRANDING_SECTION_PATTERNS.every((pattern) => pattern.test(text)),
+  (text) => /^(published under\b|author:)/i.test(text)
+];
 
 function getRepoRoot(repoRoot) {
   return path.resolve(repoRoot || path.resolve(__dirname, '..'));
@@ -164,6 +172,11 @@ function extractDocumentSummary(content, title, fallback = '') {
   let fallbackCandidate = '';
 
   for (const section of sections) {
+    const shouldIgnoreSection = IGNORED_SUMMARY_SECTION_MATCHERS.some((matches) => matches(section.normalized));
+    if (shouldIgnoreSection) {
+      continue;
+    }
+
     if (
       section.normalized === normalizedTitle ||
       (normalizedFallback && section.normalized === normalizedFallback)
@@ -177,6 +190,10 @@ function extractDocumentSummary(content, title, fallback = '') {
       section.normalized.length <= normalizedTitle.length + MAX_TITLE_ADJACENT_SECTION_LENGTH
     ) {
       continue;
+    }
+    const isHeadingSection = /^\s{0,3}#{1,6}\s+/.test(section.raw.trim());
+    if (isHeadingSection && section.normalized.length >= MIN_SUMMARY_LENGTH) {
+      return section.normalized;
     }
 
     const sectionLines = section.raw.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);

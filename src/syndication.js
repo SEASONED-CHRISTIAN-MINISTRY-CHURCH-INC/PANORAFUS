@@ -75,7 +75,7 @@ function mergeSyndicationItems(currentItems, previousItems, limit = SYNDICATION_
       const previousItem = previousByFile.get(file);
       const currentTime = Date.parse(currentItem?.committedAt || '') || 0;
       const previousTime = Date.parse(previousItem?.committedAt || '') || 0;
-      return currentTime > previousTime ? currentItem : previousItem;
+      return currentTime >= previousTime ? currentItem : previousItem;
     })
   );
   const unpublishedCurrentItems = sortByRecency(

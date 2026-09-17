@@ -167,17 +167,23 @@ ${snapshot.workflows.map((workflow) => `- \`${workflow}\``).join('\n')}
 
 function generateDashboardFile(repoRoot) {
   const root = path.resolve(repoRoot || path.resolve(__dirname, '..'));
-  let snapshot = createDashboardSnapshot(root);
-  let output = generateDashboardMarkdown(snapshot);
-  fs.writeFileSync(path.join(root, 'PANORAFUS_DASHBOARD.md'), output);
+  const dashboardPath = path.join(root, 'PANORAFUS_DASHBOARD.md');
+  const initialSnapshot = createDashboardSnapshot(root);
+  fs.writeFileSync(dashboardPath, generateDashboardMarkdown(initialSnapshot));
 
-  if (snapshot.kpis.dashboardPlaceholders !== 0) {
-    snapshot = createDashboardSnapshot(root);
-    output = generateDashboardMarkdown(snapshot);
-    fs.writeFileSync(path.join(root, 'PANORAFUS_DASHBOARD.md'), output);
+  const recomputedSnapshot = createDashboardSnapshot(root);
+  const kpisChanged = (
+    recomputedSnapshot.kpis.documentationLines !== initialSnapshot.kpis.documentationLines ||
+    recomputedSnapshot.kpis.externalLinks !== initialSnapshot.kpis.externalLinks ||
+    recomputedSnapshot.kpis.dashboardPlaceholders !== initialSnapshot.kpis.dashboardPlaceholders
+  );
+
+  if (!kpisChanged) {
+    return initialSnapshot;
   }
 
-  return snapshot;
+  fs.writeFileSync(dashboardPath, generateDashboardMarkdown(recomputedSnapshot));
+  return recomputedSnapshot;
 }
 
 module.exports = {
