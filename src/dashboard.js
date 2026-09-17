@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { getRepositoryMetrics } = require('./repository-data');
+const { getDocumentationKpis, getRepositoryMetrics } = require('./repository-data');
 
 function compactMonthName(month) {
   return month.slice(0, 3);
@@ -63,6 +63,16 @@ function createDashboardSnapshot(repoRoot) {
     },
     trending: createTrendingSnapshot(metrics),
     workflows: metrics.workflows
+  };
+}
+
+function recomputeDocsDependentKpis(repoRoot) {
+  const documentationKpis = getDocumentationKpis(repoRoot);
+
+  return {
+    documentationLines: documentationKpis.docsLines,
+    externalLinks: documentationKpis.externalLinks,
+    dashboardPlaceholders: documentationKpis.dashboardPlaceholders
   };
 }
 
@@ -171,19 +181,26 @@ function generateDashboardFile(repoRoot) {
   const initialSnapshot = createDashboardSnapshot(root);
   fs.writeFileSync(dashboardPath, generateDashboardMarkdown(initialSnapshot));
 
-  const recomputedSnapshot = createDashboardSnapshot(root);
+  const recomputedKpis = recomputeDocsDependentKpis(root);
   const kpisChanged = (
-    recomputedSnapshot.kpis.documentationLines !== initialSnapshot.kpis.documentationLines ||
-    recomputedSnapshot.kpis.externalLinks !== initialSnapshot.kpis.externalLinks ||
-    recomputedSnapshot.kpis.dashboardPlaceholders !== initialSnapshot.kpis.dashboardPlaceholders
+    recomputedKpis.documentationLines !== initialSnapshot.kpis.documentationLines ||
+    recomputedKpis.externalLinks !== initialSnapshot.kpis.externalLinks ||
+    recomputedKpis.dashboardPlaceholders !== initialSnapshot.kpis.dashboardPlaceholders
   );
 
   if (!kpisChanged) {
     return initialSnapshot;
   }
 
-  fs.writeFileSync(dashboardPath, generateDashboardMarkdown(recomputedSnapshot));
-  return recomputedSnapshot;
+  const updatedSnapshot = {
+    ...initialSnapshot,
+    kpis: {
+      ...initialSnapshot.kpis,
+      ...recomputedKpis
+    }
+  };
+  fs.writeFileSync(dashboardPath, generateDashboardMarkdown(updatedSnapshot));
+  return updatedSnapshot;
 }
 
 module.exports = {
