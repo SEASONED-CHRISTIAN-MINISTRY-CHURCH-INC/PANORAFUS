@@ -167,15 +167,12 @@ ${snapshot.workflows.map((workflow) => `- \`${workflow}\``).join('\n')}
 
 function generateDashboardFile(repoRoot) {
   const root = path.resolve(repoRoot || path.resolve(__dirname, '..'));
+  const dashboardPath = path.join(root, 'PANORAFUS_DASHBOARD.md');
   let snapshot = createDashboardSnapshot(root);
-  let output = generateDashboardMarkdown(snapshot);
-  fs.writeFileSync(path.join(root, 'PANORAFUS_DASHBOARD.md'), output);
+  fs.writeFileSync(dashboardPath, generateDashboardMarkdown(snapshot));
 
-  if (snapshot.kpis.dashboardPlaceholders !== 0) {
-    snapshot = createDashboardSnapshot(root);
-    output = generateDashboardMarkdown(snapshot);
-    fs.writeFileSync(path.join(root, 'PANORAFUS_DASHBOARD.md'), output);
-  }
+  snapshot = createDashboardSnapshot(root);
+  fs.writeFileSync(dashboardPath, generateDashboardMarkdown(snapshot));
 
   return snapshot;
 }

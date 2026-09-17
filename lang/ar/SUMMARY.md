@@ -21,6 +21,7 @@
 - [الرؤى والمكاشفات](VISIONS_AND_REVELATIONS.md)
 - [عشاء الرب](THE_LORD_SUPPER.md)
 - [ذبائح الدم — المسيح الحمل](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
+- [الرموز والظلال — الجوهر](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [الناموس — الإنجيل](LAW_GOSPEL.md)
 - [العبادة والصلاة](WORSHIP_AND_PRAYER.md)
 - [الصلاة التأملية](DEVOTIONAL_PRAYER.md)

@@ -4,14 +4,78 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Thu, 17 Sep 2026 12:28:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 12:42:59 GMT</lastBuildDate>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:af7e1ca6efb6adac2bd08a20a6ca50db0323c542</guid>
-      <pubDate>Thu, 17 Sep 2026 12:10:10 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
       <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
+    </item>
+
+    <item>
+      <title>BLOOD SACRIFICES — CHRIST THE LAMB</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md</link>
+      <guid>BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
+      <description>An Eschatology-Centered Biblical Study of Sin, Atonement, and the Triumph of the Lamb of God</description>
+    </item>
+
+    <item>
+      <title>About PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md</link>
+      <guid>ABOUT_PANORAFUS.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
+      <description>PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority.</description>
+    </item>
+
+    <item>
+      <title>Apostle Paul — Genealogy &amp; Life: From Infancy to Death</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md</link>
+      <guid>APOSTLE_PAUL_GENEALOGY.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
+      <description>Note on Andronicus &amp; Junia (Romans 16:7): Paul calls them &quot;my kinsmen and my fellow-prisoners, who are of note among the apostles, who also were in Christ before me.&quot; This indicates Paul had believing relatives who came to faith in Christ even before his own conversion.</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI App Architecture Builder</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md</link>
+      <guid>APP_ARCHITECTURE_BUILDER.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
+      <description>This document defines the PANORAFUS.AI architecture builder as a documentation-first framework for planning and governing application architecture decisions.</description>
+    </item>
+
+    <item>
+      <title>📖 PANORAFUS OF BIBLICAL ESCHATOLOGY</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md</link>
+      <guid>BIBLICAL_ESCHATOLOGY.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
+      <description>A Philosopher&apos;s Journey Through the Last Things, Inspired by God</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI Book Tariff</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
+      <guid>BOOK_TARIFF.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
+      <description>The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.</description>
+    </item>
+
+    <item>
+      <title>Buddhist Religious Institutions</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md</link>
+      <guid>BUDDHIST_INSTITUTIONS.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
+      <description>A structured overview of major Buddhist religious institutions worldwide, organized by tradition and function.</description>
+    </item>
+
+    <item>
+      <title>Christian Religious Institutions</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md</link>
+      <guid>CHRISTIAN_INSTITUTIONS.md:71ac0e260809589c0ea0f7778e6934fed7124e12</guid>
+      <pubDate>Thu, 17 Sep 2026 12:28:14 GMT</pubDate>
+      <description>A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.</description>
     </item>
 
     <item>
@@ -19,7 +83,7 @@
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
       <guid>README.md:1a92594bd998037126bfefed7895b351012a9a57</guid>
       <pubDate>Wed, 16 Sep 2026 20:51:37 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License</description>
+      <description>PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.</description>
     </item>
 
     <item>
@@ -35,71 +99,7 @@
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/LAW_GOSPEL.md</link>
       <guid>LAW_GOSPEL.md:b56814b23a853a0d0796010ab0038ae6a926f26a</guid>
       <pubDate>Wed, 16 Sep 2026 20:48:19 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
-    </item>
-
-    <item>
-      <title>BLOOD SACRIFICES — CHRIST THE LAMB</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md</link>
-      <guid>BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:5ba570888fc17298a97cf1567d1a952bae2536bd</guid>
-      <pubDate>Tue, 15 Sep 2026 17:08:37 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
-    </item>
-
-    <item>
-      <title>About PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md</link>
-      <guid>ABOUT_PANORAFUS.md:5ba570888fc17298a97cf1567d1a952bae2536bd</guid>
-      <pubDate>Tue, 15 Sep 2026 17:08:37 GMT</pubDate>
-      <description>PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority.</description>
-    </item>
-
-    <item>
-      <title>Apostle Paul — Genealogy &amp; Life: From Infancy to Death</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md</link>
-      <guid>APOSTLE_PAUL_GENEALOGY.md:5ba570888fc17298a97cf1567d1a952bae2536bd</guid>
-      <pubDate>Tue, 15 Sep 2026 17:08:37 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI App Architecture Builder</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md</link>
-      <guid>APP_ARCHITECTURE_BUILDER.md:5ba570888fc17298a97cf1567d1a952bae2536bd</guid>
-      <pubDate>Tue, 15 Sep 2026 17:08:37 GMT</pubDate>
-      <description>This document defines the PANORAFUS.AI architecture builder as a documentation-first framework for planning and governing application architecture decisions.</description>
-    </item>
-
-    <item>
-      <title>📖 PANORAFUS OF BIBLICAL ESCHATOLOGY</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md</link>
-      <guid>BIBLICAL_ESCHATOLOGY.md:5ba570888fc17298a97cf1567d1a952bae2536bd</guid>
-      <pubDate>Tue, 15 Sep 2026 17:08:37 GMT</pubDate>
-      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI Book Tariff</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md</link>
-      <guid>BOOK_TARIFF.md:5ba570888fc17298a97cf1567d1a952bae2536bd</guid>
-      <pubDate>Tue, 15 Sep 2026 17:08:37 GMT</pubDate>
-      <description>The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.</description>
-    </item>
-
-    <item>
-      <title>Buddhist Religious Institutions</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md</link>
-      <guid>BUDDHIST_INSTITUTIONS.md:5ba570888fc17298a97cf1567d1a952bae2536bd</guid>
-      <pubDate>Tue, 15 Sep 2026 17:08:37 GMT</pubDate>
-      <description>A structured overview of major Buddhist religious institutions worldwide, organized by tradition and function.</description>
-    </item>
-
-    <item>
-      <title>Christian Religious Institutions</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md</link>
-      <guid>CHRISTIAN_INSTITUTIONS.md:5ba570888fc17298a97cf1567d1a952bae2536bd</guid>
-      <pubDate>Tue, 15 Sep 2026 17:08:37 GMT</pubDate>
-      <description>A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.</description>
+      <description>An Eschatology-Centered Biblical Study of Sin Exposed and Grace Revealed in Jesus Christ</description>
     </item>
   </channel>
 </rss>
