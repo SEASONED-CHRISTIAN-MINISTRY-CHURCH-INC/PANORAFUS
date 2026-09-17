@@ -24,6 +24,7 @@
 - [Visions and Revelations](VISIONS_AND_REVELATIONS.md)
 - [The Lord's Supper](THE_LORD_SUPPER.md)
 - [Blood Sacrifices — Christ the Lamb](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
+- [Figures and Shadows — Substance](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [Law — Gospel](LAW_GOSPEL.md)
 - [Worship and Prayer](WORSHIP_AND_PRAYER.md)
 - [Devotional Prayer](DEVOTIONAL_PRAYER.md)

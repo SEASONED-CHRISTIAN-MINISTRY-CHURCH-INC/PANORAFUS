@@ -6,11 +6,32 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:e207c8846a837e7c2e968d57ba31793c61edb045",
+      "id": "PANORAFUS_DASHBOARD.md:2ecc0ed58446484df41ee3451c626519ec68eefd",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-16T20:54:09Z"
+      "date_published": "2026-09-16T20:55:48Z"
+    },
+    {
+      "id": "FIGURES_AND_SHADOWS_SUBSTANCE.md:1a92594bd998037126bfefed7895b351012a9a57",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/FIGURES_AND_SHADOWS_SUBSTANCE.md",
+      "title": "🕯️ FIGURES AND SHADOWS — SUBSTANCE",
+      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
+      "date_published": "2026-09-16T20:51:37Z"
+    },
+    {
+      "id": "README.md:1a92594bd998037126bfefed7895b351012a9a57",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License",
+      "date_published": "2026-09-16T20:51:37Z"
+    },
+    {
+      "id": "SUMMARY.md:1a92594bd998037126bfefed7895b351012a9a57",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "title": "Summary",
+      "summary": "Summary",
+      "date_published": "2026-09-16T20:51:37Z"
     },
     {
       "id": "LAW_GOSPEL.md:b56814b23a853a0d0796010ab0038ae6a926f26a",
@@ -20,74 +41,53 @@
       "date_published": "2026-09-16T20:48:19Z"
     },
     {
-      "id": "README.md:b56814b23a853a0d0796010ab0038ae6a926f26a",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
-      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com © 2024–2026 SEASONED CHRISTIAN MINISTRY CHURCH, INC. — All Rights Reserved. | License",
-      "date_published": "2026-09-16T20:48:19Z"
-    },
-    {
-      "id": "SUMMARY.md:b56814b23a853a0d0796010ab0038ae6a926f26a",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
-      "title": "Summary",
-      "summary": "Summary",
-      "date_published": "2026-09-16T20:48:19Z"
-    },
-    {
-      "id": "BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:5ba570888fc17298a97cf1567d1a952bae2536bd",
+      "id": "BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:e621253fe6650825f1d63955b67fb1ae7f530eff",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md",
       "title": "BLOOD SACRIFICES — CHRIST THE LAMB",
       "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-15T17:08:37Z"
+      "date_published": "2026-09-15T17:04:06Z"
     },
     {
-      "id": "ABOUT_PANORAFUS.md:5ba570888fc17298a97cf1567d1a952bae2536bd",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md",
-      "title": "About PANORAFUS.AI",
-      "summary": "PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority.",
-      "date_published": "2026-09-15T17:08:37Z"
-    },
-    {
-      "id": "APOSTLE_PAUL_GENEALOGY.md:5ba570888fc17298a97cf1567d1a952bae2536bd",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md",
-      "title": "Apostle Paul — Genealogy & Life: From Infancy to Death",
+      "id": "REIGN_OF_DEATH_ETERNAL_LIFE.md:5868f209099db774daade50c3fd3aa5482ce1ed2",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/REIGN_OF_DEATH_ETERNAL_LIFE.md",
+      "title": "REIGN OF DEATH – ETERNAL LIFE",
       "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-15T17:08:37Z"
+      "date_published": "2026-09-13T18:10:48Z"
     },
     {
-      "id": "APP_ARCHITECTURE_BUILDER.md:5ba570888fc17298a97cf1567d1a952bae2536bd",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/APP_ARCHITECTURE_BUILDER.md",
-      "title": "PANORAFUS.AI App Architecture Builder",
-      "summary": "This document defines the PANORAFUS.AI architecture builder as a documentation-first framework for planning and governing application architecture decisions.",
-      "date_published": "2026-09-15T17:08:37Z"
+      "id": "CONTRIBUTE.md:c51f634827eceb917e143b95ef8e319b6d70efd2",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CONTRIBUTE.md",
+      "title": "Contribute to PANORAFUS.AI",
+      "summary": "Thank you for helping PANORAFUS.AI expand its global directory of institutions, ministries, and faith-based networks.",
+      "date_published": "2026-09-13T18:00:21Z"
     },
     {
-      "id": "BIBLICAL_ESCHATOLOGY.md:5ba570888fc17298a97cf1567d1a952bae2536bd",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BIBLICAL_ESCHATOLOGY.md",
-      "title": "📖 PANORAFUS OF BIBLICAL ESCHATOLOGY",
+      "id": "SECURITY.md:e5a59c27b1ecef1ff28be708a7e10120111df88f",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SECURITY.md",
+      "title": "PANORAFUS.AI Security & Compliance Policy",
+      "summary": "Protecting the integrity, privacy, and trustworthiness of the PANORAFUS.AI global network and its automated robotic services.",
+      "date_published": "2026-09-12T20:18:53Z"
+    },
+    {
+      "id": "SATANS_VICTORY_SATANS_DEFEAT.md:197dac5e82acf8391f1fcfbe4f96f8be10f29215",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SATANS_VICTORY_SATANS_DEFEAT.md",
+      "title": "⚔️ SATAN'S VICTORY — SATAN'S DEFEAT",
       "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
-      "date_published": "2026-09-15T17:08:37Z"
+      "date_published": "2026-09-11T19:51:04Z"
     },
     {
-      "id": "BOOK_TARIFF.md:5ba570888fc17298a97cf1567d1a952bae2536bd",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BOOK_TARIFF.md",
-      "title": "PANORAFUS.AI Book Tariff",
-      "summary": "The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource.",
-      "date_published": "2026-09-15T17:08:37Z"
+      "id": "SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md:39f725d913c8b3eabf16cf2162ca0279fd3d8441",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md",
+      "title": "🌅 SPIRITUAL DARKNESS — LIGHTS OF THE WORLD",
+      "summary": "PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com",
+      "date_published": "2026-09-09T22:01:36Z"
     },
     {
-      "id": "BUDDHIST_INSTITUTIONS.md:5ba570888fc17298a97cf1567d1a952bae2536bd",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md",
-      "title": "Buddhist Religious Institutions",
-      "summary": "A structured overview of major Buddhist religious institutions worldwide, organized by tradition and function.",
-      "date_published": "2026-09-15T17:08:37Z"
-    },
-    {
-      "id": "CHRISTIAN_INSTITUTIONS.md:5ba570888fc17298a97cf1567d1a952bae2536bd",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md",
-      "title": "Christian Religious Institutions",
-      "summary": "A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.",
-      "date_published": "2026-09-15T17:08:37Z"
+      "id": "FIRST_THINGS_LAST_THINGS.md:97c35f817f48d01d43bc2c5c7874dd2721f8c703",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/FIRST_THINGS_LAST_THINGS.md",
+      "title": "FIRST THINGS - LAST THINGS",
+      "summary": "PANORAFUS.AI presents the beginning and the end under the Lordship of Jesus Christ — the One who is the Alpha and the Omega.",
+      "date_published": "2026-09-07T19:50:58Z"
     }
   ]
 }
