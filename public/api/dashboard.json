@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T12:42:59.156Z",
+  "generatedAt": "2026-09-17T12:52:14.027Z",
   "dataSources": [
     "Top-level PANORAFUS.AI documentation files",
     "Git commit history for the current calendar year",
@@ -123,19 +123,19 @@
       "monthIndex": 7,
       "month": "August",
       "commits": 137,
-      "docsTouched": 991,
-      "workflowChanges": 31,
-      "codeChanges": 81,
-      "totalActivity": 1240
+      "docsTouched": 396,
+      "workflowChanges": 24,
+      "codeChanges": 42,
+      "totalActivity": 599
     },
     {
       "monthIndex": 8,
       "month": "September",
-      "commits": 94,
-      "docsTouched": 381,
-      "workflowChanges": 7,
-      "codeChanges": 49,
-      "totalActivity": 531
+      "commits": 97,
+      "docsTouched": 241,
+      "workflowChanges": 0,
+      "codeChanges": 55,
+      "totalActivity": 393
     },
     {
       "monthIndex": 9,
