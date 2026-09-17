@@ -460,6 +460,22 @@ function countDashboardPlaceholders(repoRoot) {
   return (readUtf8(dashboardPath).match(/\bTBD\b/g) || []).length;
 }
 
+function getDocumentationKpis(repoRoot) {
+  const root = getRepoRoot(repoRoot);
+  const docs = ROOT_DOC_FILES.map((file) => ({
+    file,
+    path: path.join(root, file),
+    content: readUtf8(path.join(root, file))
+  }));
+
+  return {
+    docsCount: docs.length,
+    docsLines: docs.reduce((total, file) => total + countLines(file.content), 0),
+    externalLinks: docs.reduce((total, file) => total + countExternalLinks(file.content), 0),
+    dashboardPlaceholders: countDashboardPlaceholders(root)
+  };
+}
+
 function getPreviousDashboardMonthlyActivity(repoRoot) {
   const dashboardPath = path.join(getRepoRoot(repoRoot), 'public', 'api', 'dashboard.json');
   const snapshot = readJsonFile(dashboardPath);
@@ -575,28 +591,21 @@ function getMonthlyActivity(repoRoot, year = new Date().getUTCFullYear()) {
 
 function getRepositoryMetrics(repoRoot) {
   const root = getRepoRoot(repoRoot);
-  const docs = ROOT_DOC_FILES.map((file) => ({
-    file,
-    path: path.join(root, file),
-    content: readUtf8(path.join(root, file))
-  }));
+  const documentationKpis = getDocumentationKpis(root);
   const workflows = listWorkflowFiles(root);
   const institutions = getInstitutionIndex(root);
   const regions = listRegionMetrics(root);
   const traditions = listTraditionMetrics(root);
-  const docsCount = docs.length;
-  const docsLines = docs.reduce((total, file) => total + countLines(file.content), 0);
-  const externalLinks = docs.reduce((total, file) => total + countExternalLinks(file.content), 0);
 
   return {
     generatedAt: new Date().toISOString(),
-    docsCount,
-    docsLines,
-    externalLinks,
+    docsCount: documentationKpis.docsCount,
+    docsLines: documentationKpis.docsLines,
+    externalLinks: documentationKpis.externalLinks,
     workflowCount: workflows.length,
     languages: ['en', 'ar', 'es', 'fr', 'pt'],
     institutionsIndexed: institutions.length,
-    dashboardPlaceholders: countDashboardPlaceholders(root),
+    dashboardPlaceholders: documentationKpis.dashboardPlaceholders,
     workflows: workflows.map((filePath) => path.basename(filePath)),
     regions,
     traditions,
@@ -669,6 +678,7 @@ function buildPlatformSnapshot(repoRoot) {
 module.exports = {
   buildPlatformSnapshot,
   getDocumentationCorpus,
+  getDocumentationKpis,
   extractDocumentSummary,
   getInstitutionIndex,
   getMonthlyActivity,

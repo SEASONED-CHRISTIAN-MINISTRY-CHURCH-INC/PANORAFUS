@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { getDocumentationCorpus, getRepositoryMetrics } = require('./repository-data');
+const { getDocumentationKpis, getRepositoryMetrics } = require('./repository-data');
 
 function compactMonthName(month) {
   return month.slice(0, 3);
@@ -66,30 +66,13 @@ function createDashboardSnapshot(repoRoot) {
   };
 }
 
-function countLines(text) {
-  if (text === undefined || text === null || text === '') {
-    return 0;
-  }
-  return text.split(/\r?\n/).length;
-}
-
-function countExternalLinks(content) {
-  const matches = String(content || '').match(/https?:\/\/[^)\s>"`]+/g) || [];
-  return matches
-    .map((url) => url.replace(/[.,;:!?]+$/, ''))
-    .filter(Boolean)
-    .length;
-}
-
 function recomputeDocsDependentKpis(repoRoot) {
-  const docs = getDocumentationCorpus(repoRoot);
-  const dashboardPath = path.join(repoRoot, 'PANORAFUS_DASHBOARD.md');
-  const dashboardContent = fs.existsSync(dashboardPath) ? fs.readFileSync(dashboardPath, 'utf8') : '';
+  const documentationKpis = getDocumentationKpis(repoRoot);
 
   return {
-    documentationLines: docs.reduce((total, file) => total + countLines(file.content), 0),
-    externalLinks: docs.reduce((total, file) => total + countExternalLinks(file.content), 0),
-    dashboardPlaceholders: (dashboardContent.match(/\bTBD\b/g) || []).length
+    documentationLines: documentationKpis.docsLines,
+    externalLinks: documentationKpis.externalLinks,
+    dashboardPlaceholders: documentationKpis.dashboardPlaceholders
   };
 }
 

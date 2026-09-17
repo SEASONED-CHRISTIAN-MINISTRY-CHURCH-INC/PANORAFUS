@@ -386,14 +386,22 @@ test('dashboard file generation recomputes KPI metrics after writing', { concurr
     delete require.cache[dashboardModulePath];
     const { generateDashboardFile: generateDashboardFileWithSpy } = require('../src/dashboard');
 
-    fs.writeFileSync(dashboardPath, `${original}\n<!-- temporary test marker -->\n`);
+    fs.writeFileSync(dashboardPath, `${original}\nTBD https://example.com.\n`);
     const generatedSnapshot = generateDashboardFileWithSpy(repoRoot);
     const generatedMarkdown = fs.readFileSync(dashboardPath, 'utf8');
     const lineMatch = generatedMarkdown.match(/\| Documentation lines tracked \| (\d+) \|/);
+    const externalLinksMatch = generatedMarkdown.match(/\| External links tracked \| (\d+) \|/);
+    const dashboardPlaceholdersMatch = generatedMarkdown.match(/\| Remaining dashboard placeholders \| (\d+) \|/);
     assert.ok(lineMatch);
+    assert.ok(externalLinksMatch);
+    assert.ok(dashboardPlaceholdersMatch);
 
     const dashboardLineCount = Number(lineMatch[1]);
+    const externalLinks = Number(externalLinksMatch[1]);
+    const dashboardPlaceholders = Number(dashboardPlaceholdersMatch[1]);
     assert.equal(dashboardLineCount, generatedSnapshot.kpis.documentationLines);
+    assert.equal(externalLinks, generatedSnapshot.kpis.externalLinks);
+    assert.equal(dashboardPlaceholders, generatedSnapshot.kpis.dashboardPlaceholders);
     assert.equal(getRepositoryMetricsCallCount, 1);
   } finally {
     repositoryData.getRepositoryMetrics = originalGetRepositoryMetrics;
