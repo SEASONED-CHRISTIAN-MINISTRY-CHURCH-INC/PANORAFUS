@@ -67,7 +67,7 @@ function createDashboardSnapshot(repoRoot) {
 }
 
 function countLines(text) {
-  if (!text) {
+  if (text === undefined || text === null || text === '') {
     return 0;
   }
   return text.split(/\r?\n/).length;
