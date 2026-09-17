@@ -405,8 +405,8 @@ test('dashboard file generation recomputes KPI metrics after writing', { concurr
     assert.equal(getRepositoryMetricsCallCount, 1);
   } finally {
     repositoryData.getRepositoryMetrics = originalGetRepositoryMetrics;
+    fs.writeFileSync(dashboardPath, original);
     delete require.cache[dashboardModulePath];
     require('../src/dashboard');
-    fs.writeFileSync(dashboardPath, original);
   }
 });
