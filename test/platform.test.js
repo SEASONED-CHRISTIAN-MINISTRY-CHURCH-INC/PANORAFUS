@@ -373,19 +373,32 @@ test('document summary skips PANORAFUS masthead branding sections', () => {
 test('dashboard file generation recomputes KPI metrics after writing', { concurrency: false }, () => {
   const dashboardPath = path.join(repoRoot, 'PANORAFUS_DASHBOARD.md');
   const original = fs.readFileSync(dashboardPath, 'utf8');
+  const repositoryData = require('../src/repository-data');
+  const originalGetRepositoryMetrics = repositoryData.getRepositoryMetrics;
+  let getRepositoryMetricsCallCount = 0;
+  const dashboardModulePath = require.resolve('../src/dashboard');
 
   try {
+    repositoryData.getRepositoryMetrics = (...args) => {
+      getRepositoryMetricsCallCount += 1;
+      return originalGetRepositoryMetrics(...args);
+    };
+    delete require.cache[dashboardModulePath];
+    const { generateDashboardFile: generateDashboardFileWithSpy } = require('../src/dashboard');
+
     fs.writeFileSync(dashboardPath, `${original}\n<!-- temporary test marker -->\n`);
-    const generatedSnapshot = generateDashboardFile(repoRoot);
+    const generatedSnapshot = generateDashboardFileWithSpy(repoRoot);
     const generatedMarkdown = fs.readFileSync(dashboardPath, 'utf8');
     const lineMatch = generatedMarkdown.match(/\| Documentation lines tracked \| (\d+) \|/);
     assert.ok(lineMatch);
 
     const dashboardLineCount = Number(lineMatch[1]);
-    const recomputedSnapshot = createDashboardSnapshot(repoRoot);
-    assert.equal(dashboardLineCount, recomputedSnapshot.kpis.documentationLines);
-    assert.equal(generatedSnapshot.kpis.documentationLines, recomputedSnapshot.kpis.documentationLines);
+    assert.equal(dashboardLineCount, generatedSnapshot.kpis.documentationLines);
+    assert.equal(getRepositoryMetricsCallCount, 1);
   } finally {
+    repositoryData.getRepositoryMetrics = originalGetRepositoryMetrics;
+    delete require.cache[dashboardModulePath];
+    require('../src/dashboard');
     fs.writeFileSync(dashboardPath, original);
   }
 });

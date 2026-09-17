@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { getRepositoryMetrics } = require('./repository-data');
+const { getDocumentationCorpus, getRepositoryMetrics } = require('./repository-data');
 
 function compactMonthName(month) {
   return month.slice(0, 3);
@@ -63,6 +63,29 @@ function createDashboardSnapshot(repoRoot) {
     },
     trending: createTrendingSnapshot(metrics),
     workflows: metrics.workflows
+  };
+}
+
+function countLines(text) {
+  if (!text) {
+    return 0;
+  }
+  return text.split(/\r?\n/).length;
+}
+
+function countExternalLinks(content) {
+  return (String(content || '').match(/https?:\/\/[^)\s>"`]+/g) || []).length;
+}
+
+function recomputeDocsDependentKpis(repoRoot) {
+  const docs = getDocumentationCorpus(repoRoot);
+  const dashboardPath = path.join(repoRoot, 'PANORAFUS_DASHBOARD.md');
+  const dashboardContent = fs.existsSync(dashboardPath) ? fs.readFileSync(dashboardPath, 'utf8') : '';
+
+  return {
+    documentationLines: docs.reduce((total, file) => total + countLines(file.content), 0),
+    externalLinks: docs.reduce((total, file) => total + countExternalLinks(file.content), 0),
+    dashboardPlaceholders: (dashboardContent.match(/\bTBD\b/g) || []).length
   };
 }
 
@@ -171,19 +194,26 @@ function generateDashboardFile(repoRoot) {
   const initialSnapshot = createDashboardSnapshot(root);
   fs.writeFileSync(dashboardPath, generateDashboardMarkdown(initialSnapshot));
 
-  const recomputedSnapshot = createDashboardSnapshot(root);
+  const recomputedKpis = recomputeDocsDependentKpis(root);
   const kpisChanged = (
-    recomputedSnapshot.kpis.documentationLines !== initialSnapshot.kpis.documentationLines ||
-    recomputedSnapshot.kpis.externalLinks !== initialSnapshot.kpis.externalLinks ||
-    recomputedSnapshot.kpis.dashboardPlaceholders !== initialSnapshot.kpis.dashboardPlaceholders
+    recomputedKpis.documentationLines !== initialSnapshot.kpis.documentationLines ||
+    recomputedKpis.externalLinks !== initialSnapshot.kpis.externalLinks ||
+    recomputedKpis.dashboardPlaceholders !== initialSnapshot.kpis.dashboardPlaceholders
   );
 
   if (!kpisChanged) {
     return initialSnapshot;
   }
 
-  fs.writeFileSync(dashboardPath, generateDashboardMarkdown(recomputedSnapshot));
-  return recomputedSnapshot;
+  const updatedSnapshot = {
+    ...initialSnapshot,
+    kpis: {
+      ...initialSnapshot.kpis,
+      ...recomputedKpis
+    }
+  };
+  fs.writeFileSync(dashboardPath, generateDashboardMarkdown(updatedSnapshot));
+  return updatedSnapshot;
 }
 
 module.exports = {
