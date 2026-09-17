@@ -4,7 +4,7 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Thu, 17 Sep 2026 00:49:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 12:09:39 GMT</lastBuildDate>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
@@ -36,6 +36,14 @@
       <guid>SUMMARY.md:1a92594bd998037126bfefed7895b351012a9a57</guid>
       <pubDate>Wed, 16 Sep 2026 20:51:37 GMT</pubDate>
       <description>Summary</description>
+    </item>
+
+    <item>
+      <title>LAW — GOSPEL</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/LAW_GOSPEL.md</link>
+      <guid>LAW_GOSPEL.md:b56814b23a853a0d0796010ab0038ae6a926f26a</guid>
+      <pubDate>Wed, 16 Sep 2026 20:48:19 GMT</pubDate>
+      <description>PANORAFUS.AI — The Pivotal Head of the Global Network 🌐 www.seasonedchristianministrychurch.com</description>
     </item>
 
     <item>
@@ -92,14 +100,6 @@
       <guid>FIRST_THINGS_LAST_THINGS.md:97c35f817f48d01d43bc2c5c7874dd2721f8c703</guid>
       <pubDate>Mon, 07 Sep 2026 19:50:58 GMT</pubDate>
       <description>PANORAFUS.AI presents the beginning and the end under the Lordship of Jesus Christ — the One who is the Alpha and the Omega.</description>
-    </item>
-
-    <item>
-      <title>About PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md</link>
-      <guid>ABOUT_PANORAFUS.md:d9ba587697de3afbf3e0a85da60745bdd4bb1ceb</guid>
-      <pubDate>Sun, 06 Sep 2026 17:30:09 GMT</pubDate>
-      <description>PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority.</description>
     </item>
   </channel>
 </rss>
