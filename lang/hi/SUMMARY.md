@@ -23,6 +23,7 @@
 - [रक्त बलिदान — मसीह मेम्ना](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
 - [आकृतियाँ और छायाएँ — सार](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [व्यवस्था — सुसमाचार](LAW_GOSPEL.md)
+- [लिखित व्यवस्था — आत्मा](WRITTEN_LAW_THE_SPIRIT.md)
 - [आराधना और प्रार्थना](WORSHIP_AND_PRAYER.md)
 - [भक्ति प्रार्थना](DEVOTIONAL_PRAYER.md)
 - [प्रार्थना और मध्यस्थता नेटवर्क](PRAYER_AND_INTERCESSION_NETWORKS.md)

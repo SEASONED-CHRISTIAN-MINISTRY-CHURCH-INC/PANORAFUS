@@ -23,6 +23,7 @@
 - [血祭——基督羔羊](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
 - [预表与影子——实体](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [律法——福音](LAW_GOSPEL.md)
+- [成文律法——圣灵](WRITTEN_LAW_THE_SPIRIT.md)
 - [敬拜与祷告](WORSHIP_AND_PRAYER.md)
 - [灵修祷告](DEVOTIONAL_PRAYER.md)
 - [祷告与代祷网络](PRAYER_AND_INTERCESSION_NETWORKS.md)

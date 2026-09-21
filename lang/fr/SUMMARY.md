@@ -23,6 +23,7 @@
 - [Sacrifices de Sang — Christ l'Agneau](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
 - [Figures et Ombres — Substance](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [La Loi — L’Évangile](LAW_GOSPEL.md)
+- [Loi Écrite — L’Esprit](WRITTEN_LAW_THE_SPIRIT.md)
 - [Adoration et Prière](WORSHIP_AND_PRAYER.md)
 - [Prière Dévotionnelle](DEVOTIONAL_PRAYER.md)
 - [Réseaux de Prière et d'Intercession](PRAYER_AND_INTERCESSION_NETWORKS.md)

@@ -23,6 +23,7 @@
 - [Sacrifícios de Sangue — Cristo, o Cordeiro](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
 - [Figuras e Sombras — Substância](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [A Lei — O Evangelho](LAW_GOSPEL.md)
+- [Lei Escrita — O Espírito](WRITTEN_LAW_THE_SPIRIT.md)
 - [Adoração e Oração](WORSHIP_AND_PRAYER.md)
 - [Oração Devocional](DEVOTIONAL_PRAYER.md)
 - [Redes de Oração e Intercessão](PRAYER_AND_INTERCESSION_NETWORKS.md)

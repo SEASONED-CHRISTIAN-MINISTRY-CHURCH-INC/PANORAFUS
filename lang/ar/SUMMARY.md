@@ -23,6 +23,7 @@
 - [ذبائح الدم — المسيح الحمل](BLOOD_SACRIFICES_CHRIST_THE_LAMB.md)
 - [الرموز والظلال — الجوهر](FIGURES_AND_SHADOWS_SUBSTANCE.md)
 - [الناموس — الإنجيل](LAW_GOSPEL.md)
+- [الناموس المكتوب — الروح](WRITTEN_LAW_THE_SPIRIT.md)
 - [العبادة والصلاة](WORSHIP_AND_PRAYER.md)
 - [الصلاة التأملية](DEVOTIONAL_PRAYER.md)
 - [شبكات الصلاة والشفاعة](PRAYER_AND_INTERCESSION_NETWORKS.md)
