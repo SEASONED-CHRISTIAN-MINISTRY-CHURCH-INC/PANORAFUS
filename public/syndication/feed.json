@@ -6,6 +6,13 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
+      "id": "PANORAFUS_DASHBOARD.md:68a9ba3c4c3911f55d0643e4fc5975f512ecd442",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
+      "title": "PANORAFUS.AI — Global Dashboard Page",
+      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
+      "date_published": "2026-09-21T18:02:37Z"
+    },
+    {
       "id": "README.md:6741361eb172ad591d8ce9c754496dc8a6b94eda",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
       "title": "PANORAFUS.AI",
@@ -18,13 +25,6 @@
       "title": "Summary",
       "summary": "Summary",
       "date_published": "2026-09-21T17:59:29Z"
-    },
-    {
-      "id": "PANORAFUS_DASHBOARD.md:4a9d032cc9c1a56427e8b7626bdef70296628c88",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "title": "PANORAFUS.AI — Global Dashboard Page",
-      "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-21T17:45:40Z"
     },
     {
       "id": "BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:71ac0e260809589c0ea0f7778e6934fed7124e12",

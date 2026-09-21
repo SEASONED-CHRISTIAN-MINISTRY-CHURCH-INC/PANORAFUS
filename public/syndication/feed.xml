@@ -4,7 +4,15 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Mon, 21 Sep 2026 18:02:36 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 18:04:42 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:68a9ba3c4c3911f55d0643e4fc5975f512ecd442</guid>
+      <pubDate>Mon, 21 Sep 2026 18:02:37 GMT</pubDate>
+      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI</title>
@@ -20,14 +28,6 @@
       <guid>SUMMARY.md:6741361eb172ad591d8ce9c754496dc8a6b94eda</guid>
       <pubDate>Mon, 21 Sep 2026 17:59:29 GMT</pubDate>
       <description>Summary</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:4a9d032cc9c1a56427e8b7626bdef70296628c88</guid>
-      <pubDate>Mon, 21 Sep 2026 17:45:40 GMT</pubDate>
-      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
     <item>
