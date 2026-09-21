@@ -20,6 +20,7 @@
 - [Reign of Death - Eternal Life](REIGN_OF_DEATH_ETERNAL_LIFE.md)
 - [Apostle Paul Genealogy](APOSTLE_PAUL_GENEALOGY.md)
 - [Resurrection Witnesses](RESURRECTION_WITNESSES.md)
+- [Ritual Ceremonies — Inner Experience](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)
 - [Holy Spirit and Gifts](HOLY_SPIRIT_AND_GIFTS.md)
 - [Visions and Revelations](VISIONS_AND_REVELATIONS.md)
 - [The Lord's Supper](THE_LORD_SUPPER.md)

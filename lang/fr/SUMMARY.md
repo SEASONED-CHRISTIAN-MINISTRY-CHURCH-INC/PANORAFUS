@@ -17,6 +17,7 @@
 - [La victoire de Satan — La défaite de Satan](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [Généalogie de l'Apôtre Paul](APOSTLE_PAUL_GENEALOGY.md)
 - [Témoins de la Résurrection](RESURRECTION_WITNESSES.md)
+- [Cérémonies Rituelles — Expérience Intérieure](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)
 - [Le Saint-Esprit et les Dons](HOLY_SPIRIT_AND_GIFTS.md)
 - [Visions et Révélations](VISIONS_AND_REVELATIONS.md)
 - [La Sainte Cène](THE_LORD_SUPPER.md)

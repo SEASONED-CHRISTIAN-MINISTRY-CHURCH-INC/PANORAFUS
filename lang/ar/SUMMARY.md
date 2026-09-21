@@ -17,6 +17,7 @@
 - [انتصار الشيطان — هزيمة الشيطان](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [سلالة الرسول بولس](APOSTLE_PAUL_GENEALOGY.md)
 - [شهود القيامة](RESURRECTION_WITNESSES.md)
+- [الطقوس الشعائرية — الخبرة الداخلية](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)
 - [الروح القدس والمواهب الروحية](HOLY_SPIRIT_AND_GIFTS.md)
 - [الرؤى والمكاشفات](VISIONS_AND_REVELATIONS.md)
 - [عشاء الرب](THE_LORD_SUPPER.md)

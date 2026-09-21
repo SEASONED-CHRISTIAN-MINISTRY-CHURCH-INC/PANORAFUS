@@ -17,6 +17,7 @@
 - [शैतान की विजय — शैतान की पराजय](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [प्रेरित पौलुस की वंशावली](APOSTLE_PAUL_GENEALOGY.md)
 - [पुनरुत्थान के साक्षी](RESURRECTION_WITNESSES.md)
+- [अनुष्ठानिक समारोह — आंतरिक अनुभव](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)
 - [पवित्र आत्मा और वरदान](HOLY_SPIRIT_AND_GIFTS.md)
 - [दर्शन और प्रकाशन](VISIONS_AND_REVELATIONS.md)
 - [प्रभु भोज](THE_LORD_SUPPER.md)
