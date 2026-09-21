@@ -17,6 +17,7 @@
 - [A vitória de Satanás — A derrota de Satanás](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [Genealogia do Apóstolo Paulo](APOSTLE_PAUL_GENEALOGY.md)
 - [Testemunhas da Ressurreição](RESURRECTION_WITNESSES.md)
+- [Cerimônias Rituais — Experiência Interior](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)
 - [O Espírito Santo e os Dons](HOLY_SPIRIT_AND_GIFTS.md)
 - [Visões e Revelações](VISIONS_AND_REVELATIONS.md)
 - [A Ceia do Senhor](THE_LORD_SUPPER.md)

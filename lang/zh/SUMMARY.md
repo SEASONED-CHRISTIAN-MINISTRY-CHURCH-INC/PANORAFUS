@@ -17,6 +17,7 @@
 - [撒但的胜利——撒但的失败](SATANS_VICTORY_SATANS_DEFEAT.md)
 - [使徒保罗的族谱](APOSTLE_PAUL_GENEALOGY.md)
 - [复活见证者](RESURRECTION_WITNESSES.md)
+- [礼仪仪式——内在经历](RITUAL_CEREMONIES_INNER_EXPERIENCE.md)
 - [圣灵与属灵恩赐](HOLY_SPIRIT_AND_GIFTS.md)
 - [异象与启示](VISIONS_AND_REVELATIONS.md)
 - [主的晚餐](THE_LORD_SUPPER.md)
