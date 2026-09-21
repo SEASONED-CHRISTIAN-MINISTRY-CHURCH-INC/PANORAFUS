@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-21T17:45:39.208Z",
+  "generatedAt": "2026-09-21T18:05:37.455Z",
   "dashboard": {
-    "generatedAt": "2026-09-21T17:45:39.208Z",
+    "generatedAt": "2026-09-21T18:05:37.455Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -133,11 +133,11 @@
       {
         "monthIndex": 8,
         "month": "September",
-        "commits": 109,
-        "docsTouched": 247,
+        "commits": 111,
+        "docsTouched": 263,
         "workflowChanges": 0,
-        "codeChanges": 64,
-        "totalActivity": 420
+        "codeChanges": 66,
+        "totalActivity": 440
       },
       {
         "monthIndex": 9,
@@ -168,9 +168,9 @@
       }
     ],
     "kpis": {
-      "documentationFiles": 52,
-      "documentationLines": 9151,
-      "externalLinks": 96,
+      "documentationFiles": 53,
+      "documentationLines": 9261,
+      "externalLinks": 97,
       "workflows": 7,
       "institutionsIndexed": 177,
       "dashboardPlaceholders": 0
@@ -200,12 +200,20 @@
   },
   "items": [
     {
+      "title": "Summary",
+      "summary": "Summary",
+      "file": "SUMMARY.md",
+      "committedAt": "2026-09-21T18:01:45Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "sha": "590aa82c5ae8ca8fcbf460acddd0de51b0c1ebee"
+    },
+    {
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
       "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-09-21T16:15:38Z",
+      "committedAt": "2026-09-21T17:45:40Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "b296444ad02cc1930549e5b3dc98fd4d0859bae6"
+      "sha": "4a9d032cc9c1a56427e8b7626bdef70296628c88"
     },
     {
       "title": "BLOOD SACRIFICES — CHRIST THE LAMB",
@@ -277,14 +285,6 @@
       "file": "README.md",
       "committedAt": "2026-09-16T20:51:37Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "sha": "1a92594bd998037126bfefed7895b351012a9a57"
-    },
-    {
-      "title": "Summary",
-      "summary": "Summary",
-      "file": "SUMMARY.md",
-      "committedAt": "2026-09-16T20:51:37Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
       "sha": "1a92594bd998037126bfefed7895b351012a9a57"
     },
     {
