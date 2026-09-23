@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-21T18:04:42.142Z",
+  "generatedAt": "2026-09-23T18:22:12.746Z",
   "dashboard": {
-    "generatedAt": "2026-09-21T18:04:42.142Z",
+    "generatedAt": "2026-09-23T18:22:12.746Z",
     "dataSources": [
       "Top-level PANORAFUS.AI documentation files",
       "Git commit history for the current calendar year",
@@ -133,11 +133,11 @@
       {
         "monthIndex": 8,
         "month": "September",
-        "commits": 114,
-        "docsTouched": 267,
+        "commits": 117,
+        "docsTouched": 283,
         "workflowChanges": 0,
-        "codeChanges": 66,
-        "totalActivity": 447
+        "codeChanges": 68,
+        "totalActivity": 468
       },
       {
         "monthIndex": 9,
@@ -168,16 +168,16 @@
       }
     ],
     "kpis": {
-      "documentationFiles": 53,
-      "documentationLines": 9230,
-      "externalLinks": 96,
+      "documentationFiles": 54,
+      "documentationLines": 9299,
+      "externalLinks": 97,
       "workflows": 7,
       "institutionsIndexed": 177,
       "dashboardPlaceholders": 0
     },
     "trending": {
       "headline": "TRENDING \"PANORAFUS.AI\" TODAY THROUGH THE SIX CONTINENTS.",
-      "generatedDate": "2026-09-21",
+      "generatedDate": "2026-09-23",
       "activeRegions": 6,
       "totalRegions": 6,
       "institutionsIndexed": 177,
@@ -200,12 +200,20 @@
   },
   "items": [
     {
+      "title": "Summary",
+      "summary": "Summary",
+      "file": "SUMMARY.md",
+      "committedAt": "2026-09-23T17:38:42Z",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
+      "sha": "11421e1565378c32eb98ea75aa8d9741d01c03a5"
+    },
+    {
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
       "file": "PANORAFUS_DASHBOARD.md",
-      "committedAt": "2026-09-21T18:02:37Z",
+      "committedAt": "2026-09-21T18:04:43Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
-      "sha": "68a9ba3c4c3911f55d0643e4fc5975f512ecd442"
+      "sha": "f70e07d379ca3c423c8222b5b8b9af5dcc2fff43"
     },
     {
       "title": "PANORAFUS.AI",
@@ -213,14 +221,6 @@
       "file": "README.md",
       "committedAt": "2026-09-21T17:59:29Z",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "sha": "6741361eb172ad591d8ce9c754496dc8a6b94eda"
-    },
-    {
-      "title": "Summary",
-      "summary": "Summary",
-      "file": "SUMMARY.md",
-      "committedAt": "2026-09-21T17:59:29Z",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md",
       "sha": "6741361eb172ad591d8ce9c754496dc8a6b94eda"
     },
     {
