@@ -12,6 +12,7 @@
 - [Eschatologie Biblique](BIBLICAL_ESCHATOLOGY.md)
 - [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [Ministère Chrétien Chevronné](SEASONED_CHRISTIAN_MINISTRY.md)
+- [Messie de l'espérance — Notre Sauveur](MESSIAH_OF_HOPE_OUR_SAVIOR.md)
 - [Voir la Parole](SEE_THE_WORD.md)
 - [Ténèbres Spirituelles — Lumières du Monde](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [La victoire de Satan — La défaite de Satan](SATANS_VICTORY_SATANS_DEFEAT.md)

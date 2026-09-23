@@ -12,6 +12,7 @@
 - [बाइबिल की एस्केटोलॉजी](BIBLICAL_ESCHATOLOGY.md)
 - [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [परिपक्व ईसाई मंत्रालय](SEASONED_CHRISTIAN_MINISTRY.md)
+- [आशा के मसीह — हमारे उद्धारकर्ता](MESSIAH_OF_HOPE_OUR_SAVIOR.md)
 - [वचन को देखें](SEE_THE_WORD.md)
 - [आत्मिक अंधकार — संसार की ज्योतियाँ](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [शैतान की विजय — शैतान की पराजय](SATANS_VICTORY_SATANS_DEFEAT.md)

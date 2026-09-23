@@ -12,6 +12,7 @@
 - [圣经末世论](BIBLICAL_ESCHATOLOGY.md)
 - [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [成熟基督徒事工](SEASONED_CHRISTIAN_MINISTRY.md)
+- [盼望的弥赛亚——我们的救主](MESSIAH_OF_HOPE_OUR_SAVIOR.md)
 - [看见神的话语](SEE_THE_WORD.md)
 - [属灵黑暗 — 世上的光](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [撒但的胜利——撒但的失败](SATANS_VICTORY_SATANS_DEFEAT.md)

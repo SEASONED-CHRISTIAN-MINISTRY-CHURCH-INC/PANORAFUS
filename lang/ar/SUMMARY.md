@@ -12,6 +12,7 @@
 - [علم الأخرويات الكتابي](BIBLICAL_ESCHATOLOGY.md)
 - [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [وزارة المسيحيين المتمرسين](SEASONED_CHRISTIAN_MINISTRY.md)
+- [مسيح الرجاء — مخلّصنا](MESSIAH_OF_HOPE_OUR_SAVIOR.md)
 - [رؤية الكلمة](SEE_THE_WORD.md)
 - [الظلمة الروحية — أنوار العالم](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [انتصار الشيطان — هزيمة الشيطان](SATANS_VICTORY_SATANS_DEFEAT.md)
