@@ -12,6 +12,7 @@
 - [Escatología Bíblica](BIBLICAL_ESCHATOLOGY.md)
 - [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [Ministerio Cristiano Experimentado](SEASONED_CHRISTIAN_MINISTRY.md)
+- [Mesías de la Esperanza — Nuestro Salvador](MESSIAH_OF_HOPE_OUR_SAVIOR.md)
 - [Ver la Palabra](SEE_THE_WORD.md)
 - [Oscuridad Espiritual — Luces del Mundo](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [La victoria de Satanás — La derrota de Satanás](SATANS_VICTORY_SATANS_DEFEAT.md)

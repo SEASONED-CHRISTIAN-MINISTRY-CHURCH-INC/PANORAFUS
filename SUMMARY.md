@@ -14,6 +14,7 @@
 - [First Things - Last Things](FIRST_THINGS_LAST_THINGS.md)
 - [Seasoned Christian Ministry](SEASONED_CHRISTIAN_MINISTRY.md)
 - [The Life & Works of Jesus Christ](LIFE_OF_JESUS_CHRIST.md)
+- [Messiah of Hope — Our Savior](MESSIAH_OF_HOPE_OUR_SAVIOR.md)
 - [See the Word](SEE_THE_WORD.md)
 - [Spiritual Darkness - Lights of the World](SPIRITUAL_DARKNESS_LIGHTS_OF_THE_WORLD.md)
 - [Satan's Victory - Satan's Defeat](SATANS_VICTORY_SATANS_DEFEAT.md)
