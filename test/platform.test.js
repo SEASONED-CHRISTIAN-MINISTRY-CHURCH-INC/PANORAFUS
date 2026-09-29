@@ -70,6 +70,14 @@ test('content syndication workflow pushes generated artifacts directly', () => {
   assert.doesNotMatch(workflow, /create-pull-request/);
 });
 
+test('mdBook build installs Rust and only configures Pages for manual deployments', () => {
+  const workflow = fs.readFileSync(path.join(repoRoot, '.github', 'workflows', 'mdbook.yml'), 'utf8');
+
+  assert.match(workflow, /- name: Install mdBook\n\s+run: \|\n\s+set -o pipefail\n/);
+  assert.match(workflow, /curl --proto '=https' --tlsv1\.2 https:\/\/sh\.rustup\.rs -sSf \| sh -s -- -y/);
+  assert.match(workflow, /- name: Setup Pages\n\s+id: pages\n\s+if: github\.event_name == 'workflow_dispatch'\n\s+uses: actions\/configure-pages@v5\n\s+with:\n\s+enablement: true/);
+});
+
 test('platform API serves health, institution, and chatbot responses', async () => {
   const server = createServer({ repoRoot, host: '127.0.0.1', port: 0 });
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
