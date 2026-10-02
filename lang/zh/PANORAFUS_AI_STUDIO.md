@@ -1,6 +1,6 @@
 > **PANORAFUS.AI** — 通用翻译框架
 
-# PANORAFUS AI STUDIO
+# PANORAFUS.AI STUDIO
 
 > 🌐 *完整翻译即将推出 — Full translation coming soon.*
 >
