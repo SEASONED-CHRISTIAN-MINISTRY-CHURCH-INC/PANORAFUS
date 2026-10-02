@@ -4,13 +4,21 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Tue, 29 Sep 2026 21:07:04 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 16:19:57 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI</title>
+      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
+      <guid>README.md:bf2b7cd972eefba10c4d3839c8c800fefb1c49e1</guid>
+      <pubDate>Fri, 02 Oct 2026 16:17:07 GMT</pubDate>
+      <description>PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.</description>
+    </item>
 
     <item>
       <title>PANORAFUS.AI — Global Dashboard Page</title>
       <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:d29bf71da7c523757c889f769685ef1a7ef2b2c7</guid>
-      <pubDate>Tue, 29 Sep 2026 21:05:24 GMT</pubDate>
+      <guid>PANORAFUS_DASHBOARD.md:c0d1ac6f3c0954b0fa11a1855c90c0a22c101d80</guid>
+      <pubDate>Tue, 29 Sep 2026 21:07:05 GMT</pubDate>
       <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
     </item>
 
@@ -20,14 +28,6 @@
       <guid>SUMMARY.md:11421e1565378c32eb98ea75aa8d9741d01c03a5</guid>
       <pubDate>Wed, 23 Sep 2026 17:38:42 GMT</pubDate>
       <description>Summary</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI</title>
-      <link>https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:6741361eb172ad591d8ce9c754496dc8a6b94eda</guid>
-      <pubDate>Mon, 21 Sep 2026 17:59:29 GMT</pubDate>
-      <description>PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.</description>
     </item>
 
     <item>

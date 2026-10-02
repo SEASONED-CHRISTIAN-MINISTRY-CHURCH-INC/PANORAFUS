@@ -6,11 +6,18 @@
   "description": "Repository-backed PANORAFUS.AI content and metrics updates.",
   "items": [
     {
-      "id": "PANORAFUS_DASHBOARD.md:d29bf71da7c523757c889f769685ef1a7ef2b2c7",
+      "id": "README.md:bf2b7cd972eefba10c4d3839c8c800fefb1c49e1",
+      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
+      "title": "PANORAFUS.AI",
+      "summary": "PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.",
+      "date_published": "2026-10-02T16:17:07Z"
+    },
+    {
+      "id": "PANORAFUS_DASHBOARD.md:c0d1ac6f3c0954b0fa11a1855c90c0a22c101d80",
       "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md",
       "title": "PANORAFUS.AI — Global Dashboard Page",
       "summary": "PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.",
-      "date_published": "2026-09-29T21:05:24Z"
+      "date_published": "2026-09-29T21:07:05Z"
     },
     {
       "id": "SUMMARY.md:11421e1565378c32eb98ea75aa8d9741d01c03a5",
@@ -18,13 +25,6 @@
       "title": "Summary",
       "summary": "Summary",
       "date_published": "2026-09-23T17:38:42Z"
-    },
-    {
-      "id": "README.md:6741361eb172ad591d8ce9c754496dc8a6b94eda",
-      "url": "https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md",
-      "title": "PANORAFUS.AI",
-      "summary": "PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.",
-      "date_published": "2026-09-21T17:59:29Z"
     },
     {
       "id": "BLOOD_SACRIFICES_CHRIST_THE_LAMB.md:71ac0e260809589c0ea0f7778e6934fed7124e12",
