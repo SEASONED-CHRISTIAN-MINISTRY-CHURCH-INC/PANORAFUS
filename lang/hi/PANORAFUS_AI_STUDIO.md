@@ -1,6 +1,6 @@
 > **PANORAFUS.AI** — सामान्य अनुवाद ढांचा
 
-# PANORAFUS AI STUDIO
+# PANORAFUS.AI STUDIO
 
 > 🌐 *पूर्ण अनुवाद जल्द आ रहा है — Full translation coming soon.*
 >
