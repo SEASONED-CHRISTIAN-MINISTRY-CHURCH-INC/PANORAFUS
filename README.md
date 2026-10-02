@@ -84,7 +84,7 @@ The executable platform uses repository-backed data from the institution indexes
 
 ### ⭐ #1 PRIORITY — Must Read · Buy · Download · Comment · Discuss
 
-> 🔥 **[PANORA-FUS OF BIBLICAL ESCHATOLOGY](BIBLICAL_ESCHATOLOGY.md)** — The study of the last things as revealed in Holy Scripture. This is the first and foremost priority of PANORAFUS.AI.
+> 🔥 **[PANORAFUS OF BIBLICAL ESCHATOLOGY](BIBLICAL_ESCHATOLOGY.md)** — The study of the last things as revealed in Holy Scripture. This is the first and foremost priority of PANORAFUS.AI.
 
 ---
 
@@ -112,7 +112,7 @@ For website management, content updates, and administrative matters related to *
 - [🧭 PANORAFUS.AI Project Setup Roadmap (Socratic Implementation)](PROJECT_SETUP_ROADMAP.md)
 - [🏗️ PANORAFUS.AI App Architecture Builder](APP_ARCHITECTURE_BUILDER.md)
 - [About PANORAFUS.AI](ABOUT_PANORAFUS.md)
-- [⭐ PANORA-FUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
+- [⭐ PANORAFUS OF BIBLICAL ESCHATOLOGY — #1 PRIORITY](BIBLICAL_ESCHATOLOGY.md)
 - [🕰️ FIRST THINGS - LAST THINGS](FIRST_THINGS_LAST_THINGS.md)
 - [✝️ The Life & Works of Jesus Christ](LIFE_OF_JESUS_CHRIST.md)
 - [🔭 PANORAFUS OF FUTURE KNOWLEDGE — Concepts, Sources & Limits of Prophetic Knowledge](FUTURE_KNOWLEDGE.md)
