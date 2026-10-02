@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-10-02T16:19:57.140Z
+Generated at: 2026-10-02T16:21:27.588Z
 
 ## Dashboard Summary
 
@@ -10,8 +10,8 @@ Generated at: 2026-10-02T16:19:57.140Z
 
 ## Recent Content Updates
 
-- **PANORAFUS.AI** — PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **PANORAFUS.AI — Global Dashboard Page** — PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
+- **PANORAFUS.AI** — PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/README.md))
 - **Summary** — Summary ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md))
 - **BLOOD SACRIFICES — CHRIST THE LAMB** — An Eschatology-Centered Biblical Study of Sin, Atonement, and the Triumph of the Lamb of God ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md))
 - **About PANORAFUS.AI** — PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority. ([source](https://github.com/jpaul11-code/PANORAFUS/blob/main/ABOUT_PANORAFUS.md))
