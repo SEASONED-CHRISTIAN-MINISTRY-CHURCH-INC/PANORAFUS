@@ -22,6 +22,7 @@ function loadConfig(env = process.env, overrides = {}) {
     port: Number(overrides.port || env.PANORAFUS_PORT || 3000),
     repoRoot,
     publicDir: path.join(repoRoot, 'public'),
+    githubWebhookSecret: overrides.githubWebhookSecret || env.PANORAFUS_GITHUB_WEBHOOK_SECRET || '',
     chat
   };
 }

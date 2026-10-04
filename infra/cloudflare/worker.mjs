@@ -24,7 +24,10 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const isApiRequest = url.pathname.startsWith('/api/');
-    const origin = isApiRequest ? env.PANORAFUS_API_ORIGIN : env.PANORAFUS_STATIC_ORIGIN;
+    const isWebhookRequest = url.pathname === '/webhooks/github';
+    const origin = isApiRequest || isWebhookRequest
+      ? env.PANORAFUS_API_ORIGIN
+      : env.PANORAFUS_STATIC_ORIGIN;
 
     if (!origin) {
       return new Response('Missing PANORAFUS origin configuration.', { status: 500 });
@@ -36,7 +39,7 @@ export default {
 
     return applySecurityHeaders(
       upstreamResponse,
-      isApiRequest ? 'no-store' : 'public, max-age=3600, s-maxage=86400'
+      isApiRequest || isWebhookRequest ? 'no-store' : 'public, max-age=3600, s-maxage=86400'
     );
   }
 };

@@ -14,6 +14,11 @@ const {
 } = require('./repository-data');
 const { createDashboardSnapshot } = require('./dashboard');
 const { createSyndicationSnapshot } = require('./syndication');
+const {
+  ALLOWED_GITHUB_WEBHOOK_EVENTS,
+  MAX_GITHUB_WEBHOOK_BODY_BYTES,
+  verifyGithubWebhookSignature
+} = require('./github-webhook');
 
 const CONTENT_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -52,6 +57,82 @@ function collectBody(request) {
     request.on('data', (chunk) => chunks.push(chunk));
     request.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
     request.on('error', reject);
+  });
+}
+
+async function collectRawBody(request) {
+  const chunks = [];
+  let size = 0;
+  for await (const chunk of request) {
+    size += chunk.length;
+    if (size > MAX_GITHUB_WEBHOOK_BODY_BYTES) {
+      const error = new Error('Request body too large.');
+      error.statusCode = 413;
+      throw error;
+    }
+    chunks.push(chunk);
+  }
+  return Buffer.concat(chunks);
+}
+
+async function handleGithubWebhook(request, response, config) {
+  if (request.method !== 'POST') {
+    sendJson(response, 405, { error: 'Method not allowed.' });
+    return;
+  }
+
+  if (!config.githubWebhookSecret) {
+    sendJson(response, 503, { error: 'GitHub webhook is not configured.' });
+    return;
+  }
+
+  let body;
+  try {
+    body = await collectRawBody(request);
+  } catch (error) {
+    sendJson(response, error.statusCode || 400, {
+      error: error.statusCode === 413 ? 'Request body too large.' : 'Unable to read request body.'
+    });
+    return;
+  }
+
+  if (!verifyGithubWebhookSignature(body, request.headers['x-hub-signature-256'], config.githubWebhookSecret)) {
+    sendJson(response, 401, { error: 'Invalid webhook signature.' });
+    return;
+  }
+
+  const event = request.headers['x-github-event'];
+  if (typeof event !== 'string' || !event) {
+    sendJson(response, 400, { error: 'Missing GitHub event header.' });
+    return;
+  }
+
+  try {
+    const payload = JSON.parse(body.toString('utf8'));
+    if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+      sendJson(response, 400, { error: 'Webhook payload must be a JSON object.' });
+      return;
+    }
+  } catch {
+    sendJson(response, 400, { error: 'Webhook payload must be valid JSON.' });
+    return;
+  }
+
+  if (event === 'ping') {
+    sendJson(response, 200, { status: 'ok', event, processed: false });
+    return;
+  }
+
+  if (!ALLOWED_GITHUB_WEBHOOK_EVENTS.has(event)) {
+    sendJson(response, 202, { status: 'ignored', event });
+    return;
+  }
+
+  sendJson(response, 202, {
+    status: 'accepted',
+    event,
+    processed: false,
+    message: 'No Wix synchronization behavior is configured.'
   });
 }
 
@@ -97,6 +178,11 @@ async function handleRequest(request, response, config) {
   const segments = url.pathname.split('/').filter(Boolean);
   const repoRoot = config.repoRoot;
 
+  if (url.pathname === '/webhooks/github') {
+    await handleGithubWebhook(request, response, config);
+    return;
+  }
+
   if (url.pathname === '/') {
     sendJson(response, 200, {
       name: 'PANORAFUS.AI Platform API',
@@ -107,7 +193,8 @@ async function handleRequest(request, response, config) {
         '/api/institutions/search?q=keyword',
         '/api/institutions/{region}',
         '/api/institutions/{tradition}',
-        '/api/chat?q=question'
+        '/api/chat?q=question',
+        '/webhooks/github'
       ]
     });
     return;
@@ -221,7 +308,7 @@ function createServer(overrides = {}) {
   const config = overrides.config || loadConfig(process.env, overrides);
   const server = http.createServer((request, response) => {
     Promise.resolve(handleRequest(request, response, config)).catch((error) => {
-      sendJson(response, 500, { error: error.message });
+      sendJson(response, 500, { error: 'Internal server error.' });
     });
   });
   server.panorafusConfig = config;
