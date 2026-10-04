@@ -43,6 +43,7 @@ doc_files=(
   "PNRF_STOCK.md"
   "ROBOTIC_SERVICES.md"
   "GLOBAL_DEPLOYMENT.md"
+  "LAUNCH_READINESS.md"
   "SECURITY.md"
   "GLOBALNETWORK" # Canonical global index file intentionally tracked without .md extension.
   "PROJECT_SETUP_ROADMAP.md"

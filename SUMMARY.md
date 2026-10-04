@@ -6,6 +6,7 @@
 - [🎛️ PANORAFUS.AI Studio](PANORAFUS_AI_STUDIO.md)
 - [🤖 Robotic Services](ROBOTIC_SERVICES.md)
 - [🌍 Global Deployment](GLOBAL_DEPLOYMENT.md)
+- [🚦 Launch Readiness & Wix Handoff](LAUNCH_READINESS.md)
 - [🔒 Security & Compliance](SECURITY.md)
 - [🏗️ App Architecture Builder](APP_ARCHITECTURE_BUILDER.md)
 - [About PANORAFUS](ABOUT_PANORAFUS.md)

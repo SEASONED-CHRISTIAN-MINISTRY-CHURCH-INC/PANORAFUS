@@ -127,6 +127,10 @@ test('GitHub webhook verifies signatures and only acknowledges allowlisted event
   };
 
   try {
+    const healthResponse = await fetch(`http://127.0.0.1:${server.address().port}/api/health`);
+    assert.equal(healthResponse.status, 200);
+    assert.equal(JSON.stringify(await healthResponse.json()).includes(secret), false);
+
     const pingResponse = await sendWebhook('ping', { zen: 'Keep it logically awesome.' });
     assert.equal(pingResponse.status, 200);
     assert.deepEqual(await pingResponse.json(), { status: 'ok', event: 'ping', processed: false });
@@ -175,6 +179,37 @@ test('GitHub webhook fails closed when no secret is configured', async () => {
     assert.deepEqual(await response.json(), { error: 'GitHub webhook is not configured.' });
   } finally {
     await new Promise((resolve) => server.close(resolve));
+  }
+});
+
+test('Cloudflare Worker sends GitHub webhook requests to the API origin without caching', async () => {
+  const { default: worker } = await import('../infra/cloudflare/worker.mjs');
+  const originalFetch = global.fetch;
+  let upstreamRequest;
+
+  global.fetch = async (request) => {
+    upstreamRequest = request;
+    return new Response('accepted');
+  };
+
+  try {
+    const response = await worker.fetch(
+      new Request('https://www.panorafus.com/webhooks/github', {
+        method: 'POST',
+        headers: { 'X-GitHub-Event': 'ping' },
+        body: '{}'
+      }),
+      {
+        PANORAFUS_API_ORIGIN: 'https://api.example.test',
+        PANORAFUS_STATIC_ORIGIN: 'https://pages.example.test'
+      }
+    );
+    assert.equal(new URL(upstreamRequest.url).origin, 'https://api.example.test');
+    assert.equal(new URL(upstreamRequest.url).pathname, '/webhooks/github');
+    assert.equal(upstreamRequest.method, 'POST');
+    assert.equal(response.headers.get('Cache-Control'), 'no-store');
+  } finally {
+    global.fetch = originalFetch;
   }
 });
 
@@ -404,7 +439,7 @@ test('syndication snapshot reads previous published items from disk', () => {
           summary: 'Summary',
           file: 'SUMMARY.md',
           committedAt: '2026-09-06T07:21:43Z',
-          url: 'https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md',
+          url: 'https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md',
           sha: 'previous-sha'
         }
       ]
@@ -427,6 +462,10 @@ test('syndication snapshot reads previous published items from disk', () => {
     assert.ok(snapshot.items.some((item) => item.file === 'SUMMARY.md'));
     assert.ok(snapshot.items.some((item) => item.file === 'ABOUT_PANORAFUS.md'));
     assert.ok(snapshot.items.some((item) => item.file === 'FIRST_THINGS_LAST_THINGS.md'));
+    assert.equal(
+      snapshot.items.find((item) => item.file === 'SUMMARY.md').url,
+      'https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md'
+    );
   } finally {
     fs.rmSync(fixtureRoot, { recursive: true, force: true });
   }
