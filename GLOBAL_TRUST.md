@@ -80,10 +80,10 @@ Every study, listing, and institutional reference in PANORAFUS.AI is evaluated a
 
 ## 🌟 Trust Indicators
 
-[![PANORAFUS.AI Docs](https://img.shields.io/badge/PANORAFUS.AI-Docs%20Validated-brightgreen?style=for-the-badge&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
+[![PANORAFUS.AI Docs](https://img.shields.io/badge/PANORAFUS.AI-Docs%20Validated-brightgreen?style=for-the-badge&logo=github)](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/actions)
 [![Global Network](https://img.shields.io/badge/Global%20Network-Active-blue?style=for-the-badge&logo=globe&logoColor=white)](GLOBALNETWORK)
 [![Scripture Grounded](https://img.shields.io/badge/Scripture-Grounded-gold?style=for-the-badge&logo=book&logoColor=white)](BIBLICAL_ESCHATOLOGY.md)
-[![Open Source](https://img.shields.io/badge/Open-Source-orange?style=for-the-badge&logo=github)](https://github.com/jpaul11-code/PANORAFUS)
+[![Open Source](https://img.shields.io/badge/Open-Source-orange?style=for-the-badge&logo=github)](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-purple?style=for-the-badge&logo=handshake&logoColor=white)](CONTRIBUTE.md)
 
 ---

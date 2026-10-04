@@ -2,6 +2,7 @@
 
 const fs = require('node:fs');
 const os = require('node:os');
+const crypto = require('node:crypto');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const path = require('path');
@@ -103,6 +104,112 @@ test('platform API serves health, institution, and chatbot responses', async () 
     assert.ok(Array.isArray(chat.citations));
   } finally {
     await new Promise((resolve) => server.close(resolve));
+  }
+});
+
+test('GitHub webhook verifies signatures and only acknowledges allowlisted events', async () => {
+  const secret = 'test-webhook-secret';
+  const server = createServer({ repoRoot, host: '127.0.0.1', port: 0, githubWebhookSecret: secret });
+  await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
+
+  const sendWebhook = async (event, payload, signingSecret = secret) => {
+    const body = Buffer.from(JSON.stringify(payload));
+    const signature = `sha256=${crypto.createHmac('sha256', signingSecret).update(body).digest('hex')}`;
+    return fetch(`http://127.0.0.1:${server.address().port}/webhooks/github`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-GitHub-Event': event,
+        'X-Hub-Signature-256': signature
+      },
+      body
+    });
+  };
+
+  try {
+    const healthResponse = await fetch(`http://127.0.0.1:${server.address().port}/api/health`);
+    assert.equal(healthResponse.status, 200);
+    assert.equal(JSON.stringify(await healthResponse.json()).includes(secret), false);
+
+    const pingResponse = await sendWebhook('ping', { zen: 'Keep it logically awesome.' });
+    assert.equal(pingResponse.status, 200);
+    assert.deepEqual(await pingResponse.json(), { status: 'ok', event: 'ping', processed: false });
+
+    const pushResponse = await sendWebhook('push', { ref: 'refs/heads/main' });
+    assert.equal(pushResponse.status, 202);
+    assert.deepEqual(await pushResponse.json(), {
+      status: 'accepted',
+      event: 'push',
+      processed: false,
+      message: 'No Wix synchronization behavior is configured.'
+    });
+
+    const ignoredResponse = await sendWebhook('issues', { action: 'opened' });
+    assert.equal(ignoredResponse.status, 202);
+    assert.deepEqual(await ignoredResponse.json(), { status: 'ignored', event: 'issues' });
+
+    const invalidSignatureResponse = await sendWebhook('ping', { zen: 'test' }, 'wrong-secret');
+    assert.equal(invalidSignatureResponse.status, 401);
+
+    const oversizedResponse = await fetch(`http://127.0.0.1:${server.address().port}/webhooks/github`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-GitHub-Event': 'ping',
+        'X-Hub-Signature-256': 'sha256=' + '0'.repeat(64)
+      },
+      body: Buffer.alloc(1024 * 1024 + 1)
+    });
+    assert.equal(oversizedResponse.status, 413);
+  } finally {
+    await new Promise((resolve) => server.close(resolve));
+  }
+});
+
+test('GitHub webhook fails closed when no secret is configured', async () => {
+  const server = createServer({ repoRoot, host: '127.0.0.1', port: 0, githubWebhookSecret: '' });
+  await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
+
+  try {
+    const response = await fetch(`http://127.0.0.1:${server.address().port}/webhooks/github`, {
+      method: 'POST',
+      body: '{}'
+    });
+    assert.equal(response.status, 503);
+    assert.deepEqual(await response.json(), { error: 'GitHub webhook is not configured.' });
+  } finally {
+    await new Promise((resolve) => server.close(resolve));
+  }
+});
+
+test('Cloudflare Worker sends GitHub webhook requests to the API origin without caching', async () => {
+  const { default: worker } = await import('../infra/cloudflare/worker.mjs');
+  const originalFetch = global.fetch;
+  let upstreamRequest;
+
+  global.fetch = async (request) => {
+    upstreamRequest = request;
+    return new Response('accepted');
+  };
+
+  try {
+    const response = await worker.fetch(
+      new Request('https://www.panorafus.com/webhooks/github', {
+        method: 'POST',
+        headers: { 'X-GitHub-Event': 'ping' },
+        body: '{}'
+      }),
+      {
+        PANORAFUS_API_ORIGIN: 'https://api.example.test',
+        PANORAFUS_STATIC_ORIGIN: 'https://pages.example.test'
+      }
+    );
+    assert.equal(new URL(upstreamRequest.url).origin, 'https://api.example.test');
+    assert.equal(new URL(upstreamRequest.url).pathname, '/webhooks/github');
+    assert.equal(upstreamRequest.method, 'POST');
+    assert.equal(response.headers.get('Cache-Control'), 'no-store');
+  } finally {
+    global.fetch = originalFetch;
   }
 });
 
@@ -332,7 +439,7 @@ test('syndication snapshot reads previous published items from disk', () => {
           summary: 'Summary',
           file: 'SUMMARY.md',
           committedAt: '2026-09-06T07:21:43Z',
-          url: 'https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md',
+          url: 'https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md',
           sha: 'previous-sha'
         }
       ]
@@ -355,6 +462,10 @@ test('syndication snapshot reads previous published items from disk', () => {
     assert.ok(snapshot.items.some((item) => item.file === 'SUMMARY.md'));
     assert.ok(snapshot.items.some((item) => item.file === 'ABOUT_PANORAFUS.md'));
     assert.ok(snapshot.items.some((item) => item.file === 'FIRST_THINGS_LAST_THINGS.md'));
+    assert.equal(
+      snapshot.items.find((item) => item.file === 'SUMMARY.md').url,
+      'https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md'
+    );
   } finally {
     fs.rmSync(fixtureRoot, { recursive: true, force: true });
   }

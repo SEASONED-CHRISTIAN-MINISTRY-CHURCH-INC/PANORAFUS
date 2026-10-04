@@ -17,7 +17,7 @@ function xmlEscape(input) {
 }
 
 function toGitHubUrl(file) {
-  return `https://github.com/jpaul11-code/PANORAFUS/blob/main/${file}`;
+  return `https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/${file}`;
 }
 
 function readPreviousSyndicationSnapshot(repoRoot) {
@@ -103,11 +103,13 @@ function createSyndicationSnapshot(repoRoot) {
     url: toGitHubUrl(item.file),
     sha: item.sha
   }));
+  const items = mergeSyndicationItems(currentItems, previousItems, SYNDICATION_ITEM_LIMIT)
+    .map((item) => ({ ...item, url: toGitHubUrl(item.file) }));
 
   return {
     generatedAt: dashboard.generatedAt,
     dashboard,
-    items: mergeSyndicationItems(currentItems, previousItems, SYNDICATION_ITEM_LIMIT)
+    items
   };
 }
 

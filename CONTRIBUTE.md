@@ -102,7 +102,7 @@ PANORAFUS.AI operates automated robotic services to keep the global network heal
 
 ### Trigger a Manual Link Health Check
 
-1. Go to [GitHub Actions → Robotic Services](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/robotic-services.yml).
+1. Go to [GitHub Actions → Robotic Services](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/actions/workflows/robotic-services.yml).
 2. Click **Run workflow** → **Run workflow** to start a manual link health check.
 3. The workflow will scan all external URLs in the documentation and open a GitHub Issue if any broken links are found.
 

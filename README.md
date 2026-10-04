@@ -5,13 +5,13 @@
 >
 > © 2024–2026 **SEASONED CHRISTIAN MINISTRY CHURCH, INC.** — All Rights Reserved. | [License](LICENSE)
 
-[![Deploy mdBook](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/mdbook.yml?label=Docs%20Build&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
-[![Docs Autopilot](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/docs-autopilot.yml?label=Docs%20Autopilot&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions)
-[![Robotic Services](https://img.shields.io/github/actions/workflow/status/jpaul11-code/PANORAFUS/robotic-services.yml?label=Link%20Health&style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS/actions/workflows/robotic-services.yml)
+[![Deploy mdBook](https://img.shields.io/github/actions/workflow/status/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/mdbook.yml?label=Docs%20Build&style=flat-square&logo=github)](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/actions)
+[![Docs Autopilot](https://img.shields.io/github/actions/workflow/status/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/docs-autopilot.yml?label=Docs%20Autopilot&style=flat-square&logo=github)](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/actions)
+[![Robotic Services](https://img.shields.io/github/actions/workflow/status/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/robotic-services.yml?label=Link%20Health&style=flat-square&logo=github)](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/actions/workflows/robotic-services.yml)
 [![Global Network](https://img.shields.io/badge/Global%20Network-Active-blue?style=flat-square)](GLOBALNETWORK)
 [![Scripture Grounded](https://img.shields.io/badge/Scripture-Grounded-gold?style=flat-square)](BIBLICAL_ESCHATOLOGY.md)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-purple?style=flat-square)](CONTRIBUTE.md)
-[![Open Source](https://img.shields.io/badge/Open-Source-orange?style=flat-square&logo=github)](https://github.com/jpaul11-code/PANORAFUS)
+[![Open Source](https://img.shields.io/badge/Open-Source-orange?style=flat-square&logo=github)](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS)
 
 PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.
 
@@ -108,6 +108,7 @@ For website management, content updates, and administrative matters related to *
 - [🎛️ PANORAFUS.AI Studio — At-a-Glance Church Services](PANORAFUS_AI_STUDIO.md)
 - [🤖 PANORAFUS.AI Robotic Services](ROBOTIC_SERVICES.md)
 - [🌍 Global Deployment Strategy](GLOBAL_DEPLOYMENT.md)
+- [🚦 Launch Readiness & Wix Handoff](LAUNCH_READINESS.md)
 - [🔒 Security & Compliance Policy](SECURITY.md)
 - [🧭 PANORAFUS.AI Project Setup Roadmap (Socratic Implementation)](PROJECT_SETUP_ROADMAP.md)
 - [🏗️ PANORAFUS.AI App Architecture Builder](APP_ARCHITECTURE_BUILDER.md)

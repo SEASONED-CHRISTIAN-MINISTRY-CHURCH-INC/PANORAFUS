@@ -3,5 +3,5 @@ main = "worker.mjs"
 compatibility_date = "2026-08-27"
 
 [vars]
-PANORAFUS_STATIC_ORIGIN = "https://jpaul11-code.github.io/PANORAFUS"
+PANORAFUS_STATIC_ORIGIN = "https://seasoned-christian-ministry-church-inc.github.io/PANORAFUS"
 PANORAFUS_API_ORIGIN = "https://api.example.com"
