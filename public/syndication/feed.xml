@@ -4,7 +4,31 @@
     <title>PANORAFUS.AI Content Syndication Feed</title>
     <link>https://www.seasonedchristianministrychurch.com</link>
     <description>Repository-backed PANORAFUS.AI content and metrics updates.</description>
-    <lastBuildDate>Sun, 04 Oct 2026 23:22:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 16:09:13 GMT</lastBuildDate>
+
+    <item>
+      <title>PANORAFUS.AI — Global Dashboard Page</title>
+      <link>https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
+      <guid>PANORAFUS_DASHBOARD.md:d9f95864c77acb2793859ea24988768643165b80</guid>
+      <pubDate>Sun, 04 Oct 2026 23:23:52 GMT</pubDate>
+      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
+    </item>
+
+    <item>
+      <title>PANORAFUS.AI</title>
+      <link>https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/README.md</link>
+      <guid>README.md:d9f95864c77acb2793859ea24988768643165b80</guid>
+      <pubDate>Sun, 04 Oct 2026 23:23:52 GMT</pubDate>
+      <description>PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.</description>
+    </item>
+
+    <item>
+      <title>Summary</title>
+      <link>https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md</link>
+      <guid>SUMMARY.md:d9f95864c77acb2793859ea24988768643165b80</guid>
+      <pubDate>Sun, 04 Oct 2026 23:23:52 GMT</pubDate>
+      <description>Summary</description>
+    </item>
 
     <item>
       <title>BLOOD SACRIFICES — CHRIST THE LAMB</title>
@@ -68,30 +92,6 @@
       <guid>CHRISTIAN_INSTITUTIONS.md:583a1d4d9792b2955dbf3efb1fb334f6b8957e11</guid>
       <pubDate>Fri, 02 Oct 2026 16:21:28 GMT</pubDate>
       <description>A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination.</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI — Global Dashboard Page</title>
-      <link>https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md</link>
-      <guid>PANORAFUS_DASHBOARD.md:739ee0d838f50a8465a64f2082d71f62d145b1e4</guid>
-      <pubDate>Fri, 02 Oct 2026 16:19:58 GMT</pubDate>
-      <description>PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status.</description>
-    </item>
-
-    <item>
-      <title>PANORAFUS.AI</title>
-      <link>https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/README.md</link>
-      <guid>README.md:bf2b7cd972eefba10c4d3839c8c800fefb1c49e1</guid>
-      <pubDate>Fri, 02 Oct 2026 16:17:07 GMT</pubDate>
-      <description>PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church.</description>
-    </item>
-
-    <item>
-      <title>Summary</title>
-      <link>https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md</link>
-      <guid>SUMMARY.md:11421e1565378c32eb98ea75aa8d9741d01c03a5</guid>
-      <pubDate>Wed, 23 Sep 2026 17:38:42 GMT</pubDate>
-      <description>Summary</description>
     </item>
 
     <item>

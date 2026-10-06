@@ -1,6 +1,6 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-10-04T23:22:40.115Z
+Generated at: 2026-10-06T16:09:13.500Z
 
 ## Dashboard Summary
 
@@ -10,6 +10,9 @@ Generated at: 2026-10-04T23:22:40.115Z
 
 ## Recent Content Updates
 
+- **PANORAFUS.AI — Global Dashboard Page** — PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
+- **PANORAFUS.AI** — PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/README.md))
+- **Summary** — Summary ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md))
 - **BLOOD SACRIFICES — CHRIST THE LAMB** — An Eschatology-Centered Biblical Study of Sin, Atonement, and the Triumph of the Lamb of God ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/BLOOD_SACRIFICES_CHRIST_THE_LAMB.md))
 - **About PANORAFUS.AI** — PANORAFUS.AI is an AI-powered global devotional platform designed to help people around the world read, search, comment, and discuss the Word of God — with Biblical Eschatology as its first and highest priority. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/ABOUT_PANORAFUS.md))
 - **Apostle Paul — Genealogy & Life: From Infancy to Death** — Note on Andronicus & Junia (Romans 16:7): Paul calls them "my kinsmen and my fellow-prisoners, who are of note among the apostles, who also were in Christ before me." This indicates Paul had believing relatives who came to faith in Christ even before his own conversion. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/APOSTLE_PAUL_GENEALOGY.md))
@@ -18,7 +21,4 @@ Generated at: 2026-10-04T23:22:40.115Z
 - **PANORAFUS.AI Book Tariff** — The PANORAFUS.AI Book (published via mdBook) is the official digital publication of PANORAFUS.AI. It consolidates the global network index, theological studies, institutional directories, and eschatological resources into a single accessible, searchable resource. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/BOOK_TARIFF.md))
 - **Buddhist Religious Institutions** — A structured overview of major Buddhist religious institutions worldwide, organized by tradition and function. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/BUDDHIST_INSTITUTIONS.md))
 - **Christian Religious Institutions** — A structured overview of major Christian religious institutions worldwide, organized by tradition/denomination. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/CHRISTIAN_INSTITUTIONS.md))
-- **PANORAFUS.AI — Global Dashboard Page** — PANORAFUS.AI dashboard overview powered by live repository metrics, indexed institution data, and workflow automation status. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/PANORAFUS_DASHBOARD.md))
-- **PANORAFUS.AI** — PANORAFUS.AI is a Scripture-centered devotional platform carrying the living Word of God to institutions, organizations, and communities across the world — powered by AI and founded by Seasoned Christian Ministry Church. ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/README.md))
-- **Summary** — Summary ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md))
 - **LAW — GOSPEL** — An Eschatology-Centered Biblical Study of Sin Exposed and Grace Revealed in Jesus Christ ([source](https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/LAW_GOSPEL.md))
