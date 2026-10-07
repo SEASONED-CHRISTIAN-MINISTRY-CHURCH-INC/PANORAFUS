@@ -109,6 +109,8 @@ The gospel does not merely say that death is bad. It proclaims that eternal life
 | grave | resurrection |
 | separation | communion with God forever |
 
+In this biblical contrast, **slavery** is the soul's bondage under sin's guilt and death's rule, while **freedom** is the believer's release through the crucified and risen Christ into righteousness, peace with God, and the sure hope of resurrection life.
+
 This remedy is governed by grace. Eternal life cannot be purchased, inherited by flesh, or earned through merit. It is God's gift in His Son.
 
 **PANORAFUS.AI** therefore places the remedy above the ruin: where sin abounded, grace abounds more. The reign of death is terrible, but the reign of Christ in life is greater.
