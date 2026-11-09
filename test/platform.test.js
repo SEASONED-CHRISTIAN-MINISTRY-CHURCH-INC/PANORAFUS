@@ -439,7 +439,7 @@ test('syndication snapshot reads previous published items from disk', () => {
           summary: 'Summary',
           file: 'SUMMARY.md',
           committedAt: '2026-09-06T07:21:43Z',
-          url: 'https://github.com/SEASONED-CHRISTIAN-MINISTRY-CHURCH-INC/PANORAFUS/blob/main/SUMMARY.md',
+          url: 'https://github.com/jpaul11-code/PANORAFUS/blob/main/SUMMARY.md',
           sha: 'previous-sha'
         }
       ]
