@@ -11,11 +11,11 @@
     }
   },
   "metrics": {
-    "generatedAt": "2026-11-09T20:27:56.766Z",
+    "generatedAt": "2026-11-16T20:01:24.068Z",
     "docsCount": 54,
-    "docsLines": 9299,
+    "docsLines": 9298,
     "externalLinks": 97,
-    "workflowCount": 7,
+    "workflowCount": 6,
     "languages": [
       "en",
       "ar",
@@ -27,7 +27,6 @@
     "dashboardPlaceholders": 0,
     "workflows": [
       "autopilot-health.yml",
-      "codeql.yml",
       "content-syndication.yml",
       "docs-autopilot.yml",
       "mdbook.yml",
@@ -216,11 +215,11 @@
       {
         "monthIndex": 10,
         "month": "November",
-        "commits": 1,
-        "docsTouched": 2,
-        "workflowChanges": 0,
+        "commits": 4,
+        "docsTouched": 4,
+        "workflowChanges": 1,
         "codeChanges": 0,
-        "totalActivity": 3
+        "totalActivity": 9
       },
       {
         "monthIndex": 11,

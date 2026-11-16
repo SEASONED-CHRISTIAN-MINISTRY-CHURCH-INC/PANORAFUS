@@ -1,11 +1,11 @@
 # PANORAFUS.AI Weekly Content Digest
 
-Generated at: 2026-11-09T20:27:57.066Z
+Generated at: 2026-11-16T20:01:24.362Z
 
 ## Dashboard Summary
 
 - Documentation files tracked: 54
-- Workflow automations tracked: 7
+- Workflow automations tracked: 6
 - Institutions indexed: 177
 
 ## Recent Content Updates

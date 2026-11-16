@@ -10,7 +10,7 @@ This dashboard is generated from tracked PANORAFUS.AI repository data sources:
 - Git commit history for the current calendar year
 - Repository workflow definitions under .github/workflows
 
-Generated at: `2026-11-09T20:27:56.555Z`
+Generated at: `2026-11-16T20:01:23.874Z`
 
 > TRENDING "PANORAFUS.AI" TODAY THROUGH THE SIX CONTINENTS.
 >
@@ -49,7 +49,7 @@ This section replaces manual placeholders with verified activity taken from the 
 | August | 137 | 396 | 24 | 42 | 599 |
 | September | 124 | 291 | 1 | 69 | 485 |
 | October | 9 | 22 | 0 | 0 | 31 |
-| November | 1 | 2 | 0 | 0 | 3 |
+| November | 4 | 4 | 1 | 0 | 9 |
 | December | 0 | 0 | 0 | 0 | 0 |
 
 ```text
@@ -64,7 +64,7 @@ Jul | ██░░░░░░░░ 115
 Aug | ██████████ 599
 Sep | ████████░░ 485
 Oct | █░░░░░░░░░ 31
-Nov | █░░░░░░░░░ 3
+Nov | █░░░░░░░░░ 9
 Dec | ░░░░░░░░░░ 0
 ```
 
@@ -75,9 +75,9 @@ Dec | ░░░░░░░░░░ 0
 | KPI | Value |
 |---|---:|
 | Documentation files tracked | 54 |
-| Documentation lines tracked | 9299 |
+| Documentation lines tracked | 9298 |
 | External links tracked | 97 |
-| Workflow automations tracked | 7 |
+| Workflow automations tracked | 6 |
 | Institutions indexed | 177 |
 | Remaining dashboard placeholders | 0 |
 
@@ -98,7 +98,6 @@ Dec | ░░░░░░░░░░ 0
 ### Workflow Files
 
 - `autopilot-health.yml`
-- `codeql.yml`
 - `content-syndication.yml`
 - `docs-autopilot.yml`
 - `mdbook.yml`

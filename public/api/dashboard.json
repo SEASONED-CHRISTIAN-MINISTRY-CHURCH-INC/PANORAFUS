@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T20:27:56.801Z",
+  "generatedAt": "2026-11-16T20:01:24.099Z",
   "dataSources": [
     "Top-level PANORAFUS.AI documentation files",
     "Git commit history for the current calendar year",
@@ -149,11 +149,11 @@
     {
       "monthIndex": 10,
       "month": "November",
-      "commits": 1,
-      "docsTouched": 2,
-      "workflowChanges": 0,
+      "commits": 4,
+      "docsTouched": 4,
+      "workflowChanges": 1,
       "codeChanges": 0,
-      "totalActivity": 3
+      "totalActivity": 9
     },
     {
       "monthIndex": 11,
@@ -167,15 +167,15 @@
   ],
   "kpis": {
     "documentationFiles": 54,
-    "documentationLines": 9299,
+    "documentationLines": 9298,
     "externalLinks": 97,
-    "workflows": 7,
+    "workflows": 6,
     "institutionsIndexed": 177,
     "dashboardPlaceholders": 0
   },
   "trending": {
     "headline": "TRENDING \"PANORAFUS.AI\" TODAY THROUGH THE SIX CONTINENTS.",
-    "generatedDate": "2026-11-09",
+    "generatedDate": "2026-11-16",
     "activeRegions": 6,
     "totalRegions": 6,
     "institutionsIndexed": 177,
@@ -188,7 +188,6 @@
   },
   "workflows": [
     "autopilot-health.yml",
-    "codeql.yml",
     "content-syndication.yml",
     "docs-autopilot.yml",
     "mdbook.yml",
