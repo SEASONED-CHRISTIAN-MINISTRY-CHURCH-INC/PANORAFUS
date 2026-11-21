@@ -1,9 +1,10 @@
 ---
 name: Contributor template
 about: Open an eschatology-centered contribution request for PANORAFUS.AI.
-title: ''
-labels: ''
-assignees: ''
+title: SEASONED CHRISTIAN MINISTRY CHURCH, INC
+labels: enhancement
+assignees: jpaul11-code
+type: Task
 
 ---
 
